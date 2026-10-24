@@ -1,434 +1,914 @@
 <!DOCTYPE html>
 
-<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary": "#ffffff", "tertiary-fixed": "#98f3e0", "surface-dark-elevated": "#252320", "on-background": "#1d1b15", "tertiary-container": "#00201b", "accent-amber": "#e8a55a", "error": "#ba1a1a", "outline": "#7a776f", "on-surface-variant": "#494740", "inverse-surface": "#333029", "on-secondary-fixed-variant": "#75331c", "primary-fixed-dim": "#cac6c2", "secondary-fixed": "#ffdbd0", "coral-hover": "#a9583e", "on-surface": "#1d1b15", "surface-bright": "#fff9ed", "tertiary": "#000000", "on-primary-fixed": "#1c1b19", "surface": "#fff9ed", "primary": "#000000", "on-secondary-fixed": "#390c00", "surface-soft": "#f5f0e8", "surface-cream-strong": "#e8e0d2", "primary-fixed": "#e6e2de", "tertiary-fixed-dim": "#7cd7c4", "on-tertiary-fixed": "#00201b", "secondary-fixed-dim": "#ffb59d", "status-error": "#c64545", "on-primary-container": "#868380", "body-default": "#3d3d3a", "surface-dark": "#181715", "on-error-container": "#93000a", "ink": "#141413", "outline-variant": "#cbc6bd", "surface-container-highest": "#e8e2d7", "canvas": "#faf9f5", "status-success": "#5db872", "on-primary": "#ffffff", "on-secondary": "#ffffff", "surface-variant": "#e8e2d7", "inverse-on-surface": "#f6f0e5", "surface-tint": "#605e5b", "surface-container-high": "#ede7dd", "body-muted": "#6c6a64", "on-tertiary-container": "#339282", "inverse-primary": "#cac6c2", "on-error": "#ffffff", "on-secondary-container": "#78361f", "on-tertiary-fixed-variant": "#005045", "background": "#fff9ed", "surface-container": "#f3ede2", "hairline": "#e6dfd8", "surface-container-lowest": "#ffffff", "hairline-soft": "#ebe6df", "secondary": "#924a31", "secondary-container": "#fea183", "primary-container": "#1c1b19", "surface-dim": "#dfd9cf", "surface-container-low": "#f9f3e8", "error-container": "#ffdad6", "on-primary-fixed-variant": "#484644" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-xl": "2.5rem", "gutter": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "margin-mobile": "1.25rem", "space-lg": "1.5rem", "gutter-mobile": "1rem", "space-md": "1rem", "margin": "3rem" }, fontFamily: { "display-sm": ["Newsreader"], "title-sm": ["Manrope"], "body-md": ["Manrope"], "display-xl-mobile": ["Newsreader"], "label-md": ["Manrope"], "display-md": ["Newsreader"], "body-sm": ["Manrope"], "body-lg": ["Manrope"], "label-sm": ["Manrope"], "display-lg-mobile": ["Newsreader"], "display-xl": ["Newsreader"], "display-lg": ["Newsreader"], "title-lg": ["Manrope"], "title-md": ["Manrope"] }, fontSize: { "display-sm": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.2px", "fontWeight": "400" }], "title-sm": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display-xl-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.5px", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "16px", "letterSpacing": "0.1px", "fontWeight": "600" }], "display-md": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.5px", "fontWeight": "400" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-sm": ["12px", { "lineHeight": "14px", "letterSpacing": "1.2px", "fontWeight": "700" }], "display-lg-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.3px", "fontWeight": "400" }], "display-xl": ["64px", { "lineHeight": "68px", "letterSpacing": "-1.5px", "fontWeight": "400" }], "display-lg": ["48px", { "lineHeight": "52px", "letterSpacing": "-1.0px", "fontWeight": "400" }], "title-lg": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.2px", "fontWeight": "600" }], "title-md": ["18px", { "lineHeight": "24px", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface text-ink font-body-md min-h-screen flex flex-col antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(20,20,19,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Lusaka Shine Pros Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XBfp6ZKh_cPf3pfGaYSYKhbquGPpTTdLDIuUsuSS9h22VfnF976dtbBDzV4SC3XtHfrivP0G8x32YsZ-7obS_NT-POOtvJb0LOSZWHLHR--GmuJ0aw0d5NBaYndzCoXqsNaZn8O7isNvBJ6NyrpxiEL8s-ayIqKdXAEQ2KrXlVjdpuVWZaq6x45TsodYY_2tGfYpHzdo3O-nQD5CNICOMsENmafJdybG6l9TQo1_CUitVVujFEggsp0zE"/><div class="flex flex-col min-w-0"><span class="font-title-sm text-title-sm text-ink truncate leading-tight">Lusaka Shine Pros</span><span class="font-label-sm text-label-sm uppercase text-secondary font-bold tracking-wider">Home</span></div></div><div class="flex items-center gap-space-xs shrink-0"><a aria-label="Call Concierge Directly" class="w-11 h-11 flex items-center justify-center rounded-xl bg-surface-container text-ink hover:text-secondary hover:bg-surface-cream-strong transition-colors" href="tel:+260971234567"><span class="material-symbols-outlined text-[20px]">call</span></a><a class="relative p-0.5 rounded-full hover:opacity-90 transition-opacity" data-path="booking" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD31i2YhoRRPC26HvXowS4uIuuOIS-kVcuJQLQB2qHMoGpQk_uxg2jYrJGu56ViVS6po_ebZSGKpY0B07dECHjqBtUEzfnYMd1qDhVl2sipZSoHUHROMNSEyvgG_oa8JVc3ZwFLuPgwrJLJ-UVxnMbwYsgqQ-XwH1RrjTnSkGxPpLkgewzeJjbxqf5xX37kQRSUKKO9tG6FesLJnLKg311KoOLN4CR6CzunolqyQURwD0D8QjEEWwKF"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-status-success"></span></a></div></div></header><main class="flex-1 flex flex-col w-full pt-16 bg-surface pb-36"><div class="flex flex-col w-full">
-<!-- Hero Section -->
-<section class="px-margin-mobile pt-space-md pb-space-lg flex flex-col gap-space-md">
-<!-- Trust Pill -->
-<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface">
-<div class="flex text-accent-amber text-[13px] tracking-tight">
-<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Lusaka Shine Pros | Executive Residential &amp; Commercial Cleaning</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed-dim": "#ffb59d", "body-muted": "#6c6a64", "surface-tint": "#605e5b", "canvas": "#faf9f5", "outline-variant": "#cbc6bd", "surface-soft": "#f5f0e8", "secondary": "#924a31", "on-secondary-fixed": "#390c00", "on-primary-fixed": "#1c1b19", "surface-container-highest": "#e8e2d7", "surface-container-low": "#f9f3e8", "on-surface-variant": "#494740", "primary-fixed-dim": "#cac6c2", "on-primary-fixed-variant": "#484644", "status-success": "#5db872", "surface-cream-strong": "#e8e0d2", "secondary-fixed": "#ffdbd0", "on-tertiary": "#ffffff", "surface-bright": "#fff9ed", "error": "#ba1a1a", "primary-fixed": "#e6e2de", "inverse-surface": "#333029", "secondary-container": "#fea183", "surface-variant": "#e8e2d7", "on-secondary": "#ffffff", "surface-container": "#f3ede2", "on-primary-container": "#868380", "on-secondary-container": "#78361f", "primary-container": "#1c1b19", "ink": "#141413", "tertiary-container": "#00201b", "on-surface": "#1d1b15", "on-tertiary-fixed": "#00201b", "inverse-primary": "#cac6c2", "error-container": "#ffdad6", "outline": "#7a776f", "hairline": "#e6dfd8", "accent-amber": "#e8a55a", "surface-container-lowest": "#ffffff", "inverse-on-surface": "#f6f0e5", "surface-dim": "#dfd9cf", "on-error": "#ffffff", "surface": "#fff9ed", "on-tertiary-container": "#339282", "body-default": "#3d3d3a", "coral-hover": "#a9583e", "background": "#fff9ed", "on-error-container": "#93000a", "on-primary": "#ffffff", "hairline-soft": "#ebe6df", "tertiary": "#000000", "on-tertiary-fixed-variant": "#005045", "surface-container-high": "#ede7dd", "tertiary-fixed-dim": "#7cd7c4", "on-background": "#1d1b15", "status-error": "#c64545", "primary": "#000000", "on-secondary-fixed-variant": "#75331c", "surface-dark-elevated": "#252320", "surface-dark": "#181715", "tertiary-fixed": "#98f3e0" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1.5rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "margin-mobile": "1.25rem", "space-md": "1rem", "gutter-mobile": "1rem", "space-xs": "0.25rem", "margin": "3rem" }, "fontFamily": { "display-xl-mobile": [ "Newsreader" ], "display-xl": [ "Newsreader" ], "title-md": [ "Manrope" ], "display-md": [ "Newsreader" ], "title-sm": [ "Manrope" ], "label-md": [ "Manrope" ], "label-sm": [ "Manrope" ], "display-lg": [ "Newsreader" ], "display-lg-mobile": [ "Newsreader" ], "display-sm": [ "Newsreader" ], "body-lg": [ "Manrope" ], "title-lg": [ "Manrope" ], "body-sm": [ "Manrope" ], "body-md": [ "Manrope" ] }, "fontSize": { "display-xl-mobile": [ "36px", { "lineHeight": "42px", "letterSpacing": "-0.5px", "fontWeight": "400" } ], "display-xl": [ "64px", { "lineHeight": "68px", "letterSpacing": "-1.5px", "fontWeight": "400" } ], "title-md": [ "18px", { "lineHeight": "24px", "fontWeight": "600" } ], "display-md": [ "36px", { "lineHeight": "42px", "letterSpacing": "-0.5px", "fontWeight": "400" } ], "title-sm": [ "16px", { "lineHeight": "22px", "fontWeight": "600" } ], "label-md": [ "14px", { "lineHeight": "16px", "letterSpacing": "0.1px", "fontWeight": "600" } ], "label-sm": [ "12px", { "lineHeight": "14px", "letterSpacing": "1.2px", "fontWeight": "700" } ], "display-lg": [ "48px", { "lineHeight": "52px", "letterSpacing": "-1.0px", "fontWeight": "400" } ], "display-lg-mobile": [ "30px", { "lineHeight": "36px", "letterSpacing": "-0.3px", "fontWeight": "400" } ], "display-sm": [ "26px", { "lineHeight": "32px", "letterSpacing": "-0.2px", "fontWeight": "400" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "title-lg": [ "20px", { "lineHeight": "26px", "letterSpacing": "-0.2px", "fontWeight": "600" } ], "body-sm": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "body-md": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ] } } } };</script></head><body class="bg-canvas font-body-md text-body-default antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-canvas/90 backdrop-blur-md shadow-[0_1px_8px_rgba(20,20,19,0.04)]"><div class="h-20 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-surface-dark flex items-center justify-center text-canvas shadow-sm"><span class="material-symbols-outlined text-[20px] text-accent-amber">auto_awesome</span></div><div class="flex flex-col"><span class="font-display-sm text-display-sm text-ink leading-tight tracking-tight">Lusaka Shine Pros</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-body-muted hidden sm:inline-block">Executive Hygiene Concierge</span></div></div><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="bg-surface-cream-strong text-ink font-title-sm rounded-lg"><a class="font-title-sm text-title-sm text-on-surface-variant hover:text-ink px-3 py-1.5 transition-colors" data-path="services-pricing" href="#services-pricing">Services &amp; Pricing</a><a class="font-title-sm text-title-sm text-on-surface-variant hover:text-ink px-3 py-1.5 transition-colors" data-path="why-us" href="#why-us">Why Us</a><a class="font-title-sm text-title-sm text-on-surface-variant hover:text-ink px-3 py-1.5 transition-colors" data-path="reviews" href="#reviews">Reviews</a><a class="font-title-sm text-title-sm text-on-surface-variant hover:text-ink px-3 py-1.5 transition-colors" data-path="estimate-book" href="#estimate-book">Estimate &amp; Book</a><a class="font-title-sm text-title-sm text-on-surface-variant hover:text-ink px-3 py-1.5 transition-colors" data-path="coverage" href="#coverage">Coverage</a></nav><div class="flex items-center gap-space-sm"><a class="hidden md:flex items-center gap-space-xs px-3 py-2 rounded-xl bg-surface-soft hover:bg-surface-cream-strong transition-colors text-ink" href="https://wa.me/260971234567" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-status-success text-[18px]">chat</span><div class="text-left"><span class="block font-label-sm text-[10px] uppercase text-body-muted leading-none">WhatsApp Concierge</span><span class="font-title-sm text-body-sm text-ink font-semibold leading-tight">+260 97 123 4567</span></div></a><a class="inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-secondary hover:bg-coral-hover text-on-secondary font-title-sm text-title-sm transition-all shadow-[0_2px_6px_rgba(20,20,19,0.06)] active:scale-[0.98]" data-path="estimate-book" href="#estimate-book">Book a Clean</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-canvas"><div class="flex flex-col w-full">
+<!-- Section 1: Hero -->
+<section class="relative w-full pt-8 pb-16 lg:pt-14 lg:pb-24 overflow-hidden">
+<!-- Ambient Warm Glow Background Elements -->
+<div class="absolute -top-32 -left-24 w-96 h-96 bg-secondary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-1/2 -right-32 w-[32rem] h-[32rem] bg-surface-cream-strong/40 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+<!-- Trust Overline Badge -->
+<div class="flex items-center gap-2 mb-6">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container text-body-default shadow-sm">
+<div class="flex items-center text-accent-amber text-xs">
+<span class="material-symbols-outlined text-[16px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-body-default font-semibold">200+ Lusaka Homes &amp; Offices</span>
-</div>
-<!-- Editorial Warm Headline -->
-<div class="flex flex-col gap-space-xs">
-<p class="font-label-md text-label-md text-secondary font-bold uppercase tracking-wider">Muli bwanji Lusaka!</p>
-<h1 class="font-display-lg-mobile text-display-lg-mobile text-ink tracking-tight">
-        Spotless Lusaka homes, cared for like family.
-      </h1>
-<p class="font-body-md text-body-md text-body-default leading-relaxed mt-1">
-        Reliable, background-checked cleaning pros arriving at your doorstep across Kabulonga, Woodlands, Chilenje, Roma, and greater Lusaka.
-      </p>
-</div>
-<!-- Visual Storytelling Hero Vignette -->
-<div class="relative w-full h-52 rounded-xl overflow-hidden shadow-sm bg-surface-container">
-<img class="w-full h-full object-cover" data-alt="An immaculate modern living room interior in an upscale Lusaka suburban home with warm sunlight pouring across polished hardwood floors, cream linen sofas, lush potted fiddle leaf fig plants, and a professional smiling Zambian female cleaner neatly arranging fresh textiles in modern warm earth tone attire, architectural aesthetic, editorial warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTbaVF9f-vMRyWmU8WgRpWlFPB7nHvHJjrIkriQt5ypDPE5Si2dHEGAz4kZjcUuFrGRsSAj64Tc17WlniNzSv5wwUjeDud0jdbZhUni_ZQxShXq-nr9dY2yi1SWhNzchUuP-KVo4hYdLKzVyKhxOKo61CRJd4bNHQb6OgdEDqvAF5WcipLljzK1zG4ezvgmU2lRuU0IaJxk_H6e6nCSRyvgfvE4UngM5pw9DilTiQKmCcpZnQMXqKS"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-dark/60 via-transparent to-transparent flex items-end p-space-sm">
-<div class="flex items-center gap-space-xs text-on-primary">
-<span class="material-symbols-outlined text-status-success text-[18px]">verified_user</span>
-<span class="font-label-sm text-label-sm tracking-wide">Equipped with non-toxic botanical solutions</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-ink font-semibold">4.9 Rating</span>
+<span class="text-body-muted text-xs">•</span>
+<span class="font-body-sm text-body-sm text-body-muted hidden sm:inline">200+ homes &amp; offices in Kabulonga, Woodlands, Chilenje &amp; Roma</span>
 </div>
 </div>
-</div>
-<!-- Action Buttons Row -->
-<div class="flex flex-col sm:flex-row gap-space-xs pt-space-xs">
-<a class="w-full h-12 bg-secondary hover:bg-coral-hover text-on-secondary font-title-sm text-title-sm rounded-xl flex items-center justify-center gap-space-xs shadow-sm transition-colors text-center" data-path="booking" href="#">
-<span>Book in 60 Seconds</span>
-<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</a>
-<a class="w-full h-12 bg-surface-container hover:bg-surface-cream-strong text-ink font-title-sm text-title-sm rounded-xl flex items-center justify-center gap-space-xs transition-colors text-center" href="https://wa.me/260971234567?text=Hi%20Lusaka%20Shine%20Pros,%20I'd%20like%20to%20chat%20about%20a%20cleaning" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[18px] text-status-success">chat</span>
-<span>Chat on WhatsApp</span>
-</a>
-</div>
-<!-- Quick Value Micro-Chips -->
-<div class="grid grid-cols-1 gap-2 pt-space-xs">
-<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-body-muted">
-<span class="w-5 h-5 rounded-full bg-status-success/15 text-status-success flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-[14px]">check</span>
-</span>
-<span>Eco-friendly, child &amp; pet safe supplies included</span>
-</div>
-<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-body-muted">
-<span class="w-5 h-5 rounded-full bg-status-success/15 text-status-success flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-[14px]">check</span>
-</span>
-<span>Flexible slots: Same-day or scheduled recurring</span>
-</div>
-<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-body-muted">
-<span class="w-5 h-5 rounded-full bg-status-success/15 text-status-success flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-[14px]">check</span>
-</span>
-<span>100% Police-cleared, vetted &amp; trained teams</span>
-</div>
-</div>
-</section>
-<!-- Interactive Neighborhood Coverage Bar -->
-<section class="px-margin-mobile py-space-sm bg-surface-container-low">
-<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
-<div class="flex items-center gap-space-xs">
-<span class="material-symbols-outlined text-secondary text-[20px]">pin_drop</span>
-<span class="font-label-md text-label-md text-ink">Active Neighborhoods</span>
-</div>
-<span class="font-label-sm text-label-sm text-status-success font-bold uppercase tracking-wider">Crews Available Now</span>
-</div>
-<div class="flex flex-wrap gap-1.5 mt-space-xs">
-<span class="px-2.5 py-1 rounded-full bg-surface text-ink text-body-sm font-body-sm shadow-sm">Kabulonga</span>
-<span class="px-2.5 py-1 rounded-full bg-surface text-ink text-body-sm font-body-sm shadow-sm">Woodlands</span>
-<span class="px-2.5 py-1 rounded-full bg-surface text-ink text-body-sm font-body-sm shadow-sm">Chilenje</span>
-<span class="px-2.5 py-1 rounded-full bg-surface text-ink text-body-sm font-body-sm shadow-sm">Roma</span>
-<span class="px-2.5 py-1 rounded-full bg-surface text-ink text-body-sm font-body-sm shadow-sm">Rhodes Park</span>
-<span class="px-2.5 py-1 rounded-full bg-surface text-ink text-body-sm font-body-sm shadow-sm">Olympia</span>
-<span class="px-2.5 py-1 rounded-full bg-surface text-ink text-body-sm font-body-sm shadow-sm">Mass Media</span>
-</div>
-</section>
-<!-- Lusaka Services Preview -->
-<section class="px-margin-mobile pt-space-lg pb-space-md flex flex-col gap-space-md">
-<div class="flex flex-col gap-1">
-<div class="flex items-center gap-space-xs">
-<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Services &amp; Upfront Rates</span>
-</div>
-<h2 class="font-display-sm text-display-sm text-ink">
-        Signature Zambian Care for Every Space
-      </h2>
-<p class="font-body-sm text-body-sm text-body-default">
-        No hidden surcharges. Clear Kwacha quotes tailored to Lusaka residences and modern executive suites.
-      </p>
-</div>
-<!-- 3 Core Service Cards -->
-<div class="flex flex-col gap-space-md">
-<!-- Service 1: Residential -->
-<article class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
-<div class="relative w-full h-36 rounded-xl overflow-hidden bg-surface-container">
-<img class="w-full h-full object-cover" data-alt="A warm and tidy master bedroom in Kabulonga Lusaka with freshly laundered white bedding, polished wooden bedside table, warm bedside lamp light, clean sunlit curtains, high detail, interior design photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJHe1G_Xju_mJTTSD8ZGnEwpKmsv38kPPY9tXCTnC2gKlEcpO6DOgt3zF7YpgUTFKoha9ibhktb2muZa_Rnq-_2JGsz2NvffCmdBXgfZRRb-hg_cDjdgDfZmZoEouwqO1uDmY0CfSSOgEdRg66KeOcDWXQJKlzJ8sLqwdt5qevMDP98zgVvtQKTtZ8KJj211XkCQbBUtbR8dthsPwz7K6NdvVTef4uJs1dt-F0QmQRQat-suagLgFQ"/>
-<div class="absolute top-2 right-2 px-2.5 py-1 rounded-full bg-surface/90 backdrop-blur-sm text-ink font-title-sm text-title-sm">
-            From <span class="font-bold text-secondary">K350</span>
-</div>
-</div>
-<div class="flex flex-col gap-1">
-<div class="flex items-center justify-between">
-<h3 class="font-title-md text-title-md text-ink">Residential Care</h3>
-<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold">MOST POPULAR</span>
-</div>
-<p class="font-body-sm text-body-sm text-body-default">
-            Deep floor mopping, thorough dusting, scrubbed sanitised bathrooms, sparkling kitchen counters, and crisp linen turnover.
+<!-- Hero Headline Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-y-10 lg:gap-x-12 items-center">
+<div class="lg:col-span-7 flex flex-col items-start">
+<h1 class="font-display-xl text-display-xl-mobile sm:text-display-xl text-ink leading-[1.08] mb-6 tracking-tight">
+            Spotless Lusaka homes &amp; workspaces, cared for <span class="italic font-display-xl">like family.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-body-muted mb-8 max-w-xl leading-relaxed">
+            Reliable, police-vetted Zambian cleaning pros arriving punctually at your compound or office with child-safe, botanical supplies and industrial extraction gear.
           </p>
-</div>
-<div class="grid grid-cols-2 gap-1 text-body-sm font-body-sm text-body-muted py-1">
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined text-[16px] text-status-success">check_circle</span>
-<span>Mopping &amp; dust removal</span>
-</div>
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined text-[16px] text-status-success">check_circle</span>
-<span>Bathroom sanitising</span>
-</div>
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined text-[16px] text-status-success">check_circle</span>
-<span>Kitchen surfaces</span>
-</div>
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined text-[16px] text-status-success">check_circle</span>
-<span>Bed making &amp; linens</span>
-</div>
-</div>
-<a class="w-full h-11 bg-surface-cream-strong hover:bg-secondary hover:text-on-secondary text-ink font-title-sm text-title-sm rounded-xl flex items-center justify-center gap-space-xs transition-colors" data-path="booking" href="#">
-<span>Book Residential Clean</span>
-<span class="material-symbols-outlined text-[18px]">calendar_add_on</span>
+<!-- Dual CTAs -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-10">
+<a class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-secondary hover:bg-coral-hover text-on-secondary font-title-sm text-title-sm shadow-md transition-all active:scale-[0.98]" href="#estimate-book">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+              Book Your Clean in 60s
+            </a>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-surface-soft hover:bg-surface-cream-strong text-ink font-title-sm text-title-sm transition-all shadow-sm" href="#services-pricing">
+              View Honest Rates (From K350)
+              <span class="material-symbols-outlined text-[18px]">arrow_downward</span>
 </a>
-</article>
-<!-- Service 2: Office & Commercial (Executive Dark Card variant for depth hierarchy) -->
-<article class="p-space-md rounded-xl bg-surface-dark text-canvas shadow-md flex flex-col gap-space-sm">
-<div class="relative w-full h-36 rounded-xl overflow-hidden bg-surface-dark-elevated">
-<img class="w-full h-full object-cover" data-alt="A clean modern office workspace in Rhodes Park Lusaka with sleek boardroom table, spotless glass conference walls, ergonomic chairs, polished concrete flooring, executive lighting, interior corporate photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmDHC-X0thBqXNPmKN897rm1fhK_jhgSuyVE9r2A3HgFx5j9pAqICVS_CBPilcpfg3MLHICXIpBzF9jKiRmbn8ffGPV2E2NxCQ5_qCUtld0m0h-dgYm71HZ5lfPLYQbV-dUTTse62PR7brgX6rUNZsHQixxPF2YnzLW13CLQQa9z7RfSJSS898cba3UXv6gtn6tv32pTHCu8s6VefEsqP9hQ8oEBUHlnw_bbPtVPRVB-SdakzDSwLr"/>
-<div class="absolute top-2 right-2 px-2.5 py-1 rounded-full bg-surface-dark/85 backdrop-blur-sm text-canvas font-title-sm text-title-sm">
-            From <span class="font-bold text-accent-amber">K650</span>
+</div>
+<!-- Trust Strip Micro-checks -->
+<div class="grid grid-cols-2 sm:grid-cols-2 gap-3 w-full max-w-lg pt-4">
+<div class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-status-success text-[18px]">check_circle</span>
+<span>Zero deposit required</span>
+</div>
+<div class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-status-success text-[18px]">eco</span>
+<span>Eco &amp; child-safe supplies</span>
+</div>
+<div class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-status-success text-[18px]">schedule</span>
+<span>Free cancellation up to 4 hrs</span>
+</div>
+<div class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-status-success text-[18px]">payments</span>
+<span>Pay Airtel/MoMo/Cash after check</span>
 </div>
 </div>
-<div class="flex flex-col gap-1">
-<div class="flex items-center justify-between">
-<h3 class="font-title-md text-title-md text-canvas">Office &amp; Commercial</h3>
-<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-tertiary-container text-tertiary-fixed font-bold">AFTER-HOURS AVAIL</span>
 </div>
-<p class="font-body-sm text-body-sm text-primary-fixed-dim">
-            Workstations, glass partitions, executive boardroom detailing, waste removal, and pristine tea station &amp; breakroom upkeep.
-          </p>
-</div>
-<div class="grid grid-cols-2 gap-1 text-body-sm font-body-sm text-primary-fixed-dim py-1">
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">check_circle</span>
-<span>Workstation sanitising</span>
-</div>
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">check_circle</span>
-<span>Meeting room glass</span>
-</div>
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">check_circle</span>
-<span>Waste management</span>
-</div>
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">check_circle</span>
-<span>Breakroom coffee hubs</span>
-</div>
-</div>
-<a class="w-full h-11 bg-surface-dark-elevated hover:bg-secondary text-canvas font-title-sm text-title-sm rounded-xl flex items-center justify-center gap-space-xs transition-colors" data-path="booking" href="#">
-<span>Book Office Clean</span>
-<span class="material-symbols-outlined text-[18px]">business_center</span>
-</a>
-</article>
-<!-- Service 3: Move-in / Deep Clean -->
-<article class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
-<div class="relative w-full h-36 rounded-xl overflow-hidden bg-surface-container">
-<img class="w-full h-full object-cover" data-alt="A sun-drenched, freshly washed open kitchen in Woodlands Lusaka with sparkling quartz countertops, polished oven, clean open wooden shelves, spotless tile backsplashes, and gleaming taps, cinematic architectural clean finish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOcZpBhK3l9-sjpTHstpFmPayu3LED8TK0Oj6s4_0ijwP1V1VUV1F89ytUcE9SxkVHR4uQEgG6rjrSswNGL_yCjhOhwCp_tRUt2QsgHYdb2AN9SC768BNpTH8CKDur48RdGXgMhDhJaQ8efW9U7dK3CkyN6A7RRdBUabiM4vF38eyxMF6JbauZADB0nvakVrPriYZyfnaiQQpr_Ck6StlI011JJU7t_CRNi3qjMMFP-TDijGa4p4qg"/>
-<div class="absolute top-2 right-2 px-2.5 py-1 rounded-full bg-surface/90 backdrop-blur-sm text-ink font-title-sm text-title-sm">
-            From <span class="font-bold text-secondary">K850</span>
-</div>
-</div>
-<div class="flex flex-col gap-1">
-<div class="flex items-center justify-between">
-<h3 class="font-title-md text-title-md text-ink">Move-in / Deep Clean</h3>
-<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-body-default font-bold">TURNKEY REFRESH</span>
-</div>
-<p class="font-body-sm text-body-sm text-body-default">
-            Inside kitchen cabinets and oven, window tracks, deep tile grout scrubbing, baseboards, and post-renovation dust extraction.
-          </p>
-</div>
-<div class="grid grid-cols-2 gap-1 text-body-sm font-body-sm text-body-muted py-1">
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined text-[16px] text-status-success">check_circle</span>
-<span>Inside oven &amp; fridge</span>
-</div>
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined text-[16px] text-status-success">check_circle</span>
-<span>Window sills &amp; tracks</span>
-</div>
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined text-[16px] text-status-success">check_circle</span>
-<span>Tile grout scrubbing</span>
-</div>
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined text-[16px] text-status-success">check_circle</span>
-<span>Post-tenancy audit</span>
-</div>
-</div>
-<a class="w-full h-11 bg-surface-cream-strong hover:bg-secondary hover:text-on-secondary text-ink font-title-sm text-title-sm rounded-xl flex items-center justify-center gap-space-xs transition-colors" data-path="booking" href="#">
-<span>Book Deep Cleaning</span>
-<span class="material-symbols-outlined text-[18px]">cleaning_services</span>
-</a>
-</article>
-</div>
-</section>
-<!-- Interactive Instant Estimate Calculator Widget -->
-<section class="px-margin-mobile py-space-md">
-<div class="p-space-md rounded-xl bg-surface-container shadow-sm flex flex-col gap-space-sm" id="quote-widget">
-<div class="flex items-center justify-between">
-<div class="flex items-center gap-space-xs">
-<span class="material-symbols-outlined text-secondary text-[20px]">calculate</span>
-<h3 class="font-title-md text-title-md text-ink">Instant Lusaka Estimate</h3>
-</div>
-<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Live Kwacha Rate</span>
-</div>
-<div class="flex flex-col gap-space-xs">
-<label class="font-label-md text-label-md text-on-surface">Select Space Size</label>
-<div class="grid grid-cols-3 gap-2">
-<button class="quote-size-btn h-11 px-2 rounded-xl bg-surface-container-highest text-ink font-title-sm text-title-sm transition-all text-center focus:outline-none" data-label="1-2 Beds" data-rate="350" type="button">
-            1-2 Bed
-          </button>
-<button class="quote-size-btn h-11 px-2 rounded-xl bg-secondary text-on-secondary font-title-sm text-title-sm shadow-sm transition-all text-center focus:outline-none" data-label="3-4 Beds" data-rate="550" type="button">
-            3-4 Bed
-          </button>
-<button class="quote-size-btn h-11 px-2 rounded-xl bg-surface-container-highest text-ink font-title-sm text-title-sm transition-all text-center focus:outline-none" data-label="5+ Beds / Office" data-rate="850" type="button">
-            Estate
-          </button>
-</div>
-</div>
-<div class="flex flex-col gap-space-xs pt-1">
-<label class="font-label-md text-label-md text-on-surface">Frequency Discount</label>
-<div class="grid grid-cols-2 gap-2">
-<button class="quote-freq-btn h-10 px-2 rounded-xl bg-surface text-ink font-label-md text-label-md shadow-sm transition-colors text-center" data-discount="1" type="button">
-            One-time Clean
-          </button>
-<button class="quote-freq-btn h-10 px-2 rounded-xl bg-surface-container-highest text-body-muted font-label-md text-label-md transition-colors text-center" data-discount="0.85" type="button">
-            Weekly (-15%)
-          </button>
-</div>
-</div>
-<div class="p-space-sm rounded-xl bg-surface flex items-center justify-between shadow-sm mt-1">
+<!-- Right Visual Showcase: Editorial Bento Card -->
+<div class="lg:col-span-5 relative w-full">
+<div class="relative bg-surface-soft rounded-2xl p-3 shadow-xl">
+<!-- Hero Imagery -->
+<div class="relative w-full h-80 sm:h-96 rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Warm editorial interior photograph of an airy sunlit Kabulonga executive villa living room with polished teak wood flooring, pristine linen sofa cushions, and spotless floor-to-ceiling glass sliding doors reflecting lush Zambian subtropical garden foliage in warm morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBVfNlOx2b6hPkCaYbscuu7CB7DpUwvucKs3bUDX-HxculZTATLdSJISRV8xS6khjLkEYbsAyiEV7ETACj9FZe2bE8wGdwgtJGrND1yCz-Pfk3IOtC5ds8mqYMh--4yt6Mnw9unQW0vWVvVpOD8NkWmPGazB5iDg1yvF4f1McdrgL9OW8sOL4S1UBQyiqhq8W6_o3hxgh3QPX_7wh1tDNJi8H1F48KDtcBOO1e771QuMEIfCeDnzzz"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dark/70 via-transparent to-transparent"></div>
+<!-- Floating Live Dispatch Pill -->
+<div class="absolute top-4 left-4 right-4 flex items-center justify-between p-3 rounded-xl bg-surface-dark/90 text-canvas backdrop-blur-md shadow-lg">
+<div class="flex items-center gap-2.5">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-status-success opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-status-success"></span>
+</span>
 <div>
-<span class="font-label-sm text-label-sm text-body-muted block uppercase">Estimated Investment</span>
-<span class="font-title-lg text-title-lg text-secondary font-bold" id="calculated-total">K550</span>
+<span class="block font-label-sm text-[10px] uppercase tracking-wider text-surface-container-highest">Live Operations</span>
+<span class="font-title-sm text-xs text-canvas font-semibold">6 Vans Active in Leopards Hill &amp; Roma</span>
 </div>
-<a class="h-10 px-space-sm bg-secondary hover:bg-coral-hover text-on-secondary font-title-sm text-title-sm rounded-xl flex items-center justify-center gap-1 transition-colors" data-path="booking" href="#" id="calc-book-link">
-<span>Lock In Slot</span>
-<span class="material-symbols-outlined text-[16px]">check</span>
-</a>
+</div>
+<span class="material-symbols-outlined text-accent-amber text-[20px]">local_shipping</span>
+</div>
+<!-- Floating Bottom Highlight -->
+<div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-canvas/95 text-ink shadow-md backdrop-blur-sm">
+<div class="flex items-center justify-between">
+<div>
+<p class="font-label-sm text-[11px] uppercase tracking-wider text-body-muted">Hospitality Certified</p>
+<p class="font-title-sm text-sm text-ink font-semibold">Uniformed, Police-Vetted Team</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-status-success">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Offset Card -->
+<div class="hidden sm:flex items-center gap-3 absolute -bottom-6 -left-6 bg-surface-dark text-canvas p-4 rounded-xl shadow-2xl max-w-xs">
+<span class="material-symbols-outlined text-accent-amber text-[28px]">electric_bolt</span>
+<div>
+<p class="font-title-sm text-sm font-semibold">Quick 15-Min Response</p>
+<p class="font-body-sm text-xs text-surface-container-highest">WhatsApp concierge confirms bookings instantly.</p>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section>
-<!-- Why Lusaka Neighbours Choose Us -->
-<section class="px-margin-mobile pt-space-md pb-space-lg flex flex-col gap-space-md">
-<div class="flex flex-col gap-1">
-<div class="flex items-center gap-space-xs">
-<span class="material-symbols-outlined text-secondary text-[18px]">handshake</span>
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Built for Lusaka Living</span>
+<!-- Section 2: Neighborhood Coverage Strip -->
+<section class="w-full bg-surface-soft py-8 shadow-sm" id="coverage">
+<div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">location_on</span>
+<span class="font-title-sm text-title-sm text-ink uppercase tracking-wider">Lusaka Service Compounds</span>
 </div>
-<h2 class="font-display-sm text-display-sm text-ink">
-        Why Lusaka Neighbours Choose Us
-      </h2>
-<p class="font-body-sm text-body-sm text-body-default">
-        From gate clearance in Roma Park to rapid arrival in Woodlands, our operations are tuned to our capital city's lifestyle.
-      </p>
+<p class="font-body-sm text-body-sm text-body-muted">
+          Same-day crews available in select zones • <a class="text-secondary font-semibold hover:underline" href="https://wa.me/260971234567" rel="noopener noreferrer" target="_blank">WhatsApp for urgent dispatch</a>
+</p>
 </div>
-<div class="flex flex-col gap-space-sm">
-<!-- Pillar 1 -->
-<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-sm">
-<div class="w-12 h-12 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-[24px]">alarm_on</span>
+<!-- Compound Pills Grid -->
+<div class="flex flex-wrap items-center gap-2.5">
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-canvas text-body-default font-title-sm text-xs shadow-sm hover:bg-surface-cream-strong transition-colors cursor-default">
+<span class="w-2 h-2 rounded-full bg-status-success"></span> Kabulonga
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-canvas text-body-default font-title-sm text-xs shadow-sm hover:bg-surface-cream-strong transition-colors cursor-default">
+<span class="w-2 h-2 rounded-full bg-status-success"></span> Woodlands
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-canvas text-body-default font-title-sm text-xs shadow-sm hover:bg-surface-cream-strong transition-colors cursor-default">
+<span class="w-2 h-2 rounded-full bg-status-success"></span> Chilenje South &amp; North
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-canvas text-body-default font-title-sm text-xs shadow-sm hover:bg-surface-cream-strong transition-colors cursor-default">
+<span class="w-2 h-2 rounded-full bg-status-success"></span> Roma &amp; Roma Park
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-canvas text-body-default font-title-sm text-xs shadow-sm hover:bg-surface-cream-strong transition-colors cursor-default">
+<span class="w-2 h-2 rounded-full bg-status-success"></span> Rhodes Park
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-canvas text-body-default font-title-sm text-xs shadow-sm hover:bg-surface-cream-strong transition-colors cursor-default">
+<span class="w-2 h-2 rounded-full bg-status-success"></span> Ibex Hill &amp; Kingsland
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-canvas text-body-default font-title-sm text-xs shadow-sm hover:bg-surface-cream-strong transition-colors cursor-default">
+<span class="w-2 h-2 rounded-full bg-status-success"></span> Olympia Park
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-canvas text-body-default font-title-sm text-xs shadow-sm hover:bg-surface-cream-strong transition-colors cursor-default">
+<span class="w-2 h-2 rounded-full bg-status-success"></span> Avondale
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-canvas text-body-default font-title-sm text-xs shadow-sm hover:bg-surface-cream-strong transition-colors cursor-default">
+<span class="w-2 h-2 rounded-full bg-status-success"></span> Mass Media
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-canvas text-body-default font-title-sm text-xs shadow-sm hover:bg-surface-cream-strong transition-colors cursor-default">
+<span class="w-2 h-2 rounded-full bg-status-success"></span> Longacres &amp; Sunningdale
+        </span>
 </div>
-<div class="flex flex-col gap-1 min-w-0">
-<h3 class="font-title-sm text-title-sm text-ink">Reliability You Can Set Your Watch To</h3>
-<p class="font-body-sm text-body-sm text-body-default">
-            Punctual arrival in your compound or gated estate. Our crews understand Lusaka traffic and arrive on time, every time.
+</div>
+</section>
+<!-- Section 3: Services & Transparent Pricing -->
+<section class="w-full py-16 lg:py-24" id="services-pricing">
+<div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+<!-- Section Header -->
+<div class="max-w-2xl mb-12">
+<span class="inline-block font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold mb-3">
+          Transparent Rates • No Hidden Fees
+        </span>
+<h2 class="font-display-lg text-display-lg-mobile sm:text-display-lg text-ink leading-tight mb-4">
+          Simple, honest cleaning packages in Zambian Kwacha.
+        </h2>
+<p class="font-body-md text-body-md text-body-muted">
+          All cleaning equipment, hospital-grade eco disinfectants, microfiber supplies, and industrial wet/dry vacuum machines are brought by our team at zero extra surcharge.
+        </p>
+</div>
+<!-- 3-Column Pricing Bento Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch mb-12">
+<!-- Card 1: Residential Standard -->
+<div class="bg-surface-container rounded-2xl p-7 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-body-muted font-bold">Standard Routine</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">cottage</span>
+</div>
+<h3 class="font-display-sm text-display-sm text-ink mb-1">Residential Maintenance</h3>
+<p class="font-body-sm text-body-sm text-body-muted mb-6">Designed for weekly, fortnightly, or monthly household upkeep.</p>
+<!-- Price Point -->
+<div class="p-4 rounded-xl bg-canvas mb-6 shadow-sm">
+<div class="flex items-baseline gap-1">
+<span class="font-label-sm text-xs text-body-muted uppercase">From</span>
+<span class="font-title-lg text-2xl font-bold text-ink">K350</span>
+<span class="text-xs text-body-muted">/ clean</span>
+</div>
+<div class="mt-2 pt-2 border-t border-hairline-soft flex items-center justify-between text-xs text-body-muted font-body-sm">
+<span>1–2 Bedroom: <strong>K350</strong></span>
+<span>•</span>
+<span>3–4 Bedroom: <strong>K550</strong></span>
+</div>
+</div>
+<!-- Features Checklist -->
+<ul class="space-y-3 font-body-sm text-body-sm text-on-surface-variant mb-8">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-status-success text-[18px] mt-0.5">check_circle</span>
+<span>Deep vacuuming and mopping of all tile &amp; Zambian wood floors</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-status-success text-[18px] mt-0.5">check_circle</span>
+<span>Complete bathroom and guest toilet sanitation &amp; descaling</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-status-success text-[18px] mt-0.5">check_circle</span>
+<span>Kitchen counter degreasing, backsplash wipedown &amp; sink sanitised</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-status-success text-[18px] mt-0.5">check_circle</span>
+<span>Skirting boards, switches, ceiling fan blades dusted</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-status-success text-[18px] mt-0.5">check_circle</span>
+<span>Bed making and crisp linen replacement (upon request)</span>
+</li>
+</ul>
+</div>
+<a class="w-full inline-flex items-center justify-center py-3 rounded-xl bg-canvas hover:bg-surface-cream-strong text-ink font-title-sm text-title-sm shadow-sm transition-all text-center" href="#estimate-book">
+            Book Residential Clean
+          </a>
+</div>
+<!-- Card 2: Deep Clean & Move Reset (FEATURED DARK NAVY CARD) -->
+<div class="relative bg-surface-dark text-canvas rounded-2xl p-7 flex flex-col justify-between shadow-xl lg:-translate-y-2">
+<!-- Featured Tag -->
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-[11px] uppercase tracking-wider font-bold shadow-md">
+            Most Popular in Lusaka
+          </div>
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-accent-amber font-bold">Deep Reset</span>
+<span class="material-symbols-outlined text-accent-amber text-[24px]">verified</span>
+</div>
+<h3 class="font-display-sm text-display-sm text-canvas mb-1">Deep &amp; Move-In / Out Reset</h3>
+<p class="font-body-sm text-body-sm text-surface-container-highest mb-6">Lease handover, tenancy changeover, or post-rainy season refresh.</p>
+<!-- Price Point -->
+<div class="p-4 rounded-xl bg-surface-dark-elevated mb-6 shadow-inner">
+<div class="flex items-baseline gap-1">
+<span class="font-label-sm text-xs text-surface-container-highest uppercase">From</span>
+<span class="font-title-lg text-2xl font-bold text-canvas">K850</span>
+<span class="text-xs text-surface-container-highest">/ thorough clean</span>
+</div>
+<div class="mt-2 pt-2 border-t border-surface-tint flex items-center justify-between text-xs text-surface-container-highest font-body-sm">
+<span>Apartments: <strong>K850</strong></span>
+<span>•</span>
+<span>Standalone Villas: <strong>K1,200+</strong></span>
+</div>
+</div>
+<!-- Features Checklist -->
+<ul class="space-y-3 font-body-sm text-body-sm text-canvas mb-8">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-accent-amber text-[18px] mt-0.5">done_all</span>
+<span>Inside oven, microwave, extractor hood &amp; refrigerator sterilisation</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-accent-amber text-[18px] mt-0.5">done_all</span>
+<span>Window tracks, sliding aluminum rails, and burglar bar dusting</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-accent-amber text-[18px] mt-0.5">done_all</span>
+<span>Tile grout scrub &amp; borehole limescale extraction on bathroom taps</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-accent-amber text-[18px] mt-0.5">done_all</span>
+<span>Interior cupboards, wardrobe drawers &amp; shelves hand-wiped</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-accent-amber text-[18px] mt-0.5">done_all</span>
+<span>Wall scuff marks and door frame perimeter touch-ups</span>
+</li>
+</ul>
+</div>
+<a class="w-full inline-flex items-center justify-center py-3.5 rounded-xl bg-secondary hover:bg-coral-hover text-on-secondary font-title-sm text-title-sm shadow-md transition-all text-center" href="#estimate-book">
+            Book Deep Clean Reset
+          </a>
+</div>
+<!-- Card 3: Office & Commercial Workspace -->
+<div class="bg-surface-container rounded-2xl p-7 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-body-muted font-bold">Executive Office</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">corporate_fare</span>
+</div>
+<h3 class="font-display-sm text-display-sm text-ink mb-1">Corporate &amp; Commercial</h3>
+<p class="font-body-sm text-body-sm text-body-muted mb-6">Discreet sanitation for diplomatic missions, embassies, and tech hubs.</p>
+<!-- Price Point -->
+<div class="p-4 rounded-xl bg-canvas mb-6 shadow-sm">
+<div class="flex items-baseline gap-1">
+<span class="font-label-sm text-xs text-body-muted uppercase">From</span>
+<span class="font-title-lg text-2xl font-bold text-ink">K650</span>
+<span class="text-xs text-body-muted">/ visit</span>
+</div>
+<div class="mt-2 pt-2 border-t border-hairline-soft flex items-center justify-between text-xs text-body-muted font-body-sm">
+<span>Up to 250 sqm: <strong>K650</strong></span>
+<span>•</span>
+<span>Floor Plates: <strong>Custom SLA</strong></span>
+</div>
+</div>
+<!-- Features Checklist -->
+<ul class="space-y-3 font-body-sm text-body-sm text-on-surface-variant mb-8">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-status-success text-[18px] mt-0.5">check_circle</span>
+<span>Workstation screen &amp; keyboard antibacterial mist sanitisation</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-status-success text-[18px] mt-0.5">check_circle</span>
+<span>Boardroom leather conditioning &amp; polished mahogany care</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-status-success text-[18px] mt-0.5">check_circle</span>
+<span>Staff tea kitchen, coffee bar &amp; communal refrigeration deep scrub</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-status-success text-[18px] mt-0.5">check_circle</span>
+<span>Commercial waste sorting, shredder bag emptying &amp; fresh liners</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-status-success text-[18px] mt-0.5">check_circle</span>
+<span>After-hours dispatch (18:00+) or 06:00 dawn crews without office disruption</span>
+</li>
+</ul>
+</div>
+<a class="w-full inline-flex items-center justify-center py-3 rounded-xl bg-canvas hover:bg-surface-cream-strong text-ink font-title-sm text-title-sm shadow-sm transition-all text-center" href="#estimate-book">
+            Get Commercial Quote
+          </a>
+</div>
+</div>
+<!-- Add-on Extras Bar -->
+<div class="p-6 rounded-2xl bg-surface-soft shadow-sm">
+<div class="flex flex-col lg:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-cream-strong flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">add_circle</span>
+</div>
+<div>
+<p class="font-title-sm text-title-sm text-ink">Popular Specialized Lusaka Add-Ons</p>
+<p class="font-body-sm text-body-sm text-body-muted">Tick these directly during booking or request on the day with our team leader.</p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-3">
+<span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-canvas text-body-default font-body-sm text-sm shadow-sm">
+<span class="font-semibold text-ink">Deep Carpet Shampoo</span>
+<span class="text-secondary font-bold">+K200</span>
+</span>
+<span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-canvas text-body-default font-body-sm text-sm shadow-sm">
+<span class="font-semibold text-ink">Sofa Steam Scrub</span>
+<span class="text-secondary font-bold">+K250</span>
+</span>
+<span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-canvas text-body-default font-body-sm text-sm shadow-sm">
+<span class="font-semibold text-ink">Veranda Red Dust Pressure Wash</span>
+<span class="text-secondary font-bold">+K150</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Why Lusaka Neighbours Choose Us -->
+<section class="w-full py-16 lg:py-24 bg-surface-soft shadow-inner" id="why-us">
+<div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+<div class="max-w-2xl mb-12">
+<span class="inline-block font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold mb-3">
+          Trust &amp; Standards
+        </span>
+<h2 class="font-display-lg text-display-lg-mobile sm:text-display-lg text-ink leading-tight mb-4">
+          Built specifically for Lusaka living.
+        </h2>
+<p class="font-body-md text-body-md text-body-muted">
+          From navigating Lusaka rush hour between Great East Road and Kafue Roundabout to knowing exactly how to treat Zambian hardwood floors without staining, our service is tailored for this city.
+        </p>
+</div>
+<!-- 4-Card Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Feature 1 -->
+<div class="bg-canvas rounded-2xl p-6 shadow-sm flex flex-col justify-between hover:-translate-y-1 transition-transform">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-cream-strong flex items-center justify-center text-secondary mb-5">
+<span class="material-symbols-outlined text-[26px]">alarm_on</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-ink mb-2">Punctual Compound Arrival</h3>
+<p class="font-body-sm text-body-sm text-body-muted leading-relaxed">
+              We factor in estate boom-gate clearance and Lusaka traffic patterns. When we say 08:30 in Kabulonga, our van is at your gate at 08:25.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-hairline-soft flex items-center gap-2 text-xs text-status-success font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>98.6% On-Time Record</span>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="bg-canvas rounded-2xl p-6 shadow-sm flex flex-col justify-between hover:-translate-y-1 transition-transform">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-cream-strong flex items-center justify-center text-secondary mb-5">
+<span class="material-symbols-outlined text-[26px]">badge</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-ink mb-2">NRC &amp; Police-Cleared Staff</h3>
+<p class="font-body-sm text-body-sm text-body-muted leading-relaxed">
+              Every staff member is vetted against Zambian National Police records with verifiable NRC documentation and physical residence verification.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-hairline-soft flex items-center gap-2 text-xs text-status-success font-semibold">
+<span class="material-symbols-outlined text-[16px]">shield</span>
+<span>100% Background Checked</span>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="bg-canvas rounded-2xl p-6 shadow-sm flex flex-col justify-between hover:-translate-y-1 transition-transform">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-cream-strong flex items-center justify-center text-secondary mb-5">
+<span class="material-symbols-outlined text-[26px]">school</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-ink mb-2">In-House Training Academy</h3>
+<p class="font-body-sm text-body-sm text-body-muted leading-relaxed">
+              Our cleaners complete a 3-week program mastering Mukwa and Rosewood polishing, imported marble care, and limescale removal from borehole water.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-hairline-soft flex items-center gap-2 text-xs text-status-success font-semibold">
+<span class="material-symbols-outlined text-[16px]">stars</span>
+<span>Certified Material Care</span>
+</div>
+</div>
+<!-- Feature 4 -->
+<div class="bg-canvas rounded-2xl p-6 shadow-sm flex flex-col justify-between hover:-translate-y-1 transition-transform">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-cream-strong flex items-center justify-center text-secondary mb-5">
+<span class="material-symbols-outlined text-[26px]">thumb_up</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-ink mb-2">Lusaka Happiness Guarantee</h3>
+<p class="font-body-sm text-body-sm text-body-muted leading-relaxed">
+              Inspect the home with our crew lead before paying a ngwee. If you spot anything missed within 24 hours, we return immediately to re-clean at no cost.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-hairline-soft flex items-center gap-2 text-xs text-status-success font-semibold">
+<span class="material-symbols-outlined text-[16px]">handshake</span>
+<span>Inspect Before You Settle</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Interactive 60-Second Booking Concierge -->
+<section class="w-full py-16 lg:py-24" id="estimate-book">
+<div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+<!-- Section Title -->
+<div class="max-w-2xl mb-12">
+<span class="inline-block font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold mb-3">
+          Instant Estimate &amp; Booking
+        </span>
+<h2 class="font-display-lg text-display-lg-mobile sm:text-display-lg text-ink leading-tight mb-4">
+          Estimate your clean and book in 60 seconds.
+        </h2>
+<p class="font-body-md text-body-md text-body-muted">
+          Select your property size and neighbourhood. We confirm your slot on WhatsApp within 15 minutes. No advance payment required.
+        </p>
+</div>
+<!-- Split Layout: Booking Form (Left) & Real-time Quote Card (Right) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left: Interactive Form -->
+<div class="lg:col-span-7 bg-surface-container rounded-2xl p-6 sm:p-8 shadow-sm">
+<form class="space-y-6" id="quote-form">
+<!-- Step 1: Cleaning Type -->
+<div>
+<label class="block font-title-sm text-sm text-ink mb-2.5">1. Select Service Type</label>
+<div class="grid grid-cols-3 gap-3">
+<button class="service-btn active px-3 py-3 rounded-xl bg-surface-dark text-canvas font-title-sm text-xs sm:text-sm text-center shadow-sm transition-all" data-price="350" data-service="residential" type="button">
+                  Residential
+                </button>
+<button class="service-btn px-3 py-3 rounded-xl bg-canvas text-ink font-title-sm text-xs sm:text-sm text-center shadow-sm hover:bg-surface-cream-strong transition-all" data-price="850" data-service="deep" type="button">
+                  Deep Reset
+                </button>
+<button class="service-btn px-3 py-3 rounded-xl bg-canvas text-ink font-title-sm text-xs sm:text-sm text-center shadow-sm hover:bg-surface-cream-strong transition-all" data-price="650" data-service="office" type="button">
+                  Office Space
+                </button>
+</div>
+</div>
+<!-- Step 2: Property Size -->
+<div>
+<label class="block font-title-sm text-sm text-ink mb-2.5">2. Property / Space Size</label>
+<div class="grid grid-cols-3 gap-3">
+<button class="size-btn active px-3 py-3 rounded-xl bg-surface-dark text-canvas font-title-sm text-xs sm:text-sm text-center shadow-sm transition-all" data-multiplier="1" data-size="small" type="button">
+                  1–2 Bedroom
+                </button>
+<button class="size-btn px-3 py-3 rounded-xl bg-canvas text-ink font-title-sm text-xs sm:text-sm text-center shadow-sm hover:bg-surface-cream-strong transition-all" data-multiplier="1.57" data-size="medium" type="button">
+                  3–4 Bedroom
+                </button>
+<button class="size-btn px-3 py-3 rounded-xl bg-canvas text-ink font-title-sm text-xs sm:text-sm text-center shadow-sm hover:bg-surface-cream-strong transition-all" data-multiplier="2.2" data-size="large" type="button">
+                  5+ Bed / Villa
+                </button>
+</div>
+</div>
+<!-- Step 3: Add-on Checkboxes -->
+<div>
+<label class="block font-title-sm text-sm text-ink mb-2.5">3. Lusaka Specialized Add-Ons (Optional)</label>
+<div class="space-y-2.5">
+<label class="flex items-center justify-between p-3 rounded-xl bg-canvas cursor-pointer shadow-sm hover:bg-surface-cream-strong transition-colors">
+<div class="flex items-center gap-3">
+<input class="addon-checkbox w-4 h-4 rounded text-secondary focus:ring-0 cursor-pointer" data-addon="carpet" data-addon-price="200" type="checkbox"/>
+<span class="font-body-sm text-sm text-ink">Industrial Deep Carpet Shampoo</span>
+</div>
+<span class="font-title-sm text-sm text-secondary font-semibold">+K200</span>
+</label>
+<label class="flex items-center justify-between p-3 rounded-xl bg-canvas cursor-pointer shadow-sm hover:bg-surface-cream-strong transition-colors">
+<div class="flex items-center gap-3">
+<input class="addon-checkbox w-4 h-4 rounded text-secondary focus:ring-0 cursor-pointer" data-addon="sofa" data-addon-price="250" type="checkbox"/>
+<span class="font-body-sm text-sm text-ink">Lounge Suite Steam &amp; Fabric Reset</span>
+</div>
+<span class="font-title-sm text-sm text-secondary font-semibold">+K250</span>
+</label>
+<label class="flex items-center justify-between p-3 rounded-xl bg-canvas cursor-pointer shadow-sm hover:bg-surface-cream-strong transition-colors">
+<div class="flex items-center gap-3">
+<input class="addon-checkbox w-4 h-4 rounded text-secondary focus:ring-0 cursor-pointer" data-addon="dust" data-addon-price="150" type="checkbox"/>
+<span class="font-body-sm text-sm text-ink">Veranda / Patio Red Dust Pressure Jet</span>
+</div>
+<span class="font-title-sm text-sm text-secondary font-semibold">+K150</span>
+</label>
+</div>
+</div>
+<!-- Step 4: Neighborhood & Logistics -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-title-sm text-xs text-ink mb-1.5" for="neighborhood-select">Lusaka Neighbourhood</label>
+<select class="w-full h-11 px-3.5 rounded-xl bg-canvas text-ink font-body-sm text-sm shadow-sm focus:outline-none" id="neighborhood-select">
+<option value="Kabulonga">Kabulonga</option>
+<option value="Woodlands">Woodlands</option>
+<option value="Chilenje">Chilenje South / North</option>
+<option value="Roma">Roma / Roma Park</option>
+<option value="Rhodes Park">Rhodes Park</option>
+<option value="Ibex Hill">Ibex Hill / Kingsland</option>
+<option value="Olympia Park">Olympia Park</option>
+<option value="Avondale">Avondale</option>
+<option value="Mass Media">Mass Media / Longacres</option>
+<option value="Other">Other Lusaka Compound</option>
+</select>
+</div>
+<div>
+<label class="block font-title-sm text-xs text-ink mb-1.5" for="time-slot">Preferred Arrival Time</label>
+<select class="w-full h-11 px-3.5 rounded-xl bg-canvas text-ink font-body-sm text-sm shadow-sm focus:outline-none" id="time-slot">
+<option value="Morning">Morning Shift (08:00 – 12:00)</option>
+<option value="Afternoon">Afternoon Shift (13:00 – 17:00)</option>
+<option value="Dawn">Dawn Corporate (06:00 – 08:30)</option>
+</select>
+</div>
+</div>
+<!-- Step 5: Contact Info -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-title-sm text-xs text-ink mb-1.5" for="client-name">Your Full Name</label>
+<input class="w-full h-11 px-3.5 rounded-xl bg-canvas text-ink font-body-sm text-sm shadow-sm focus:outline-none" id="client-name" placeholder="e.g. Bwalya Mwape" type="text"/>
+</div>
+<div>
+<label class="block font-title-sm text-xs text-ink mb-1.5" for="client-phone">Phone or WhatsApp</label>
+<input class="w-full h-11 px-3.5 rounded-xl bg-canvas text-ink font-body-sm text-sm shadow-sm focus:outline-none" id="client-phone" placeholder="+260 97 ......" type="tel"/>
+</div>
+</div>
+<!-- Gate Access Note -->
+<div>
+<label class="block font-title-sm text-xs text-ink mb-1.5" for="client-gate">Compound / Gate Access Instructions (Optional)</label>
+<input class="w-full h-11 px-3.5 rounded-xl bg-canvas text-ink font-body-sm text-sm shadow-sm focus:outline-none" id="client-gate" placeholder="e.g. Plot 14, green gate opposite church, intercom #4" type="text"/>
+</div>
+</form>
+</div>
+<!-- Right: Live Estimated Summary Card -->
+<div class="lg:col-span-5 sticky top-28 bg-surface-dark text-canvas rounded-2xl p-7 shadow-xl">
+<div class="flex items-center justify-between pb-4 border-b border-surface-tint">
+<div>
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-accent-amber font-bold">Booking Concierge</span>
+<p class="font-title-md text-base text-canvas">Lusaka Shine Summary</p>
+</div>
+<span class="material-symbols-outlined text-status-success text-[24px]">verified</span>
+</div>
+<!-- Price Display -->
+<div class="py-6 border-b border-surface-tint">
+<span class="font-body-sm text-xs text-surface-container-highest uppercase block mb-1">Estimated Investment</span>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-4xl sm:text-5xl font-bold text-canvas" id="price-display">K350</span>
+<span class="font-body-sm text-sm text-surface-container-highest">ZMW Net</span>
+</div>
+<p class="font-body-sm text-xs text-surface-container-highest mt-2">Zero advance deposit. Pay only after you inspect the finished clean.</p>
+</div>
+<!-- Inclusions List Recap -->
+<div class="py-5 border-b border-surface-tint space-y-2.5 font-body-sm text-xs sm:text-sm text-surface-container-highest">
+<div class="flex items-center justify-between">
+<span>Service Selected:</span>
+<span class="text-canvas font-semibold" id="summary-service">Residential Clean</span>
+</div>
+<div class="flex items-center justify-between">
+<span>Property Spec:</span>
+<span class="text-canvas font-semibold" id="summary-size">1–2 Bedroom</span>
+</div>
+<div class="flex items-center justify-between">
+<span>Active Add-ons:</span>
+<span class="text-canvas font-semibold" id="summary-addons">None selected</span>
+</div>
+<div class="flex items-center justify-between">
+<span>Lusaka Zone:</span>
+<span class="text-canvas font-semibold" id="summary-zone">Kabulonga</span>
+</div>
+</div>
+<!-- Mobile Money Logos & Trust -->
+<div class="py-4">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-status-success text-[18px]">lock</span>
+<span class="font-label-sm text-xs uppercase tracking-wider text-surface-container-highest">Accepted Post-Clean</span>
+</div>
+<p class="font-body-sm text-xs text-surface-container-highest leading-relaxed">
+              Pay your crew lead via <strong>Airtel Money</strong>, <strong>MTN MoMo</strong>, Instant Bank EFT, or Cash once you are 100% satisfied.
+            </p>
+</div>
+<!-- Action Buttons -->
+<div class="pt-2 flex flex-col gap-3">
+<button class="w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-secondary hover:bg-coral-hover text-on-secondary font-title-sm text-sm sm:text-base shadow-md transition-all active:scale-[0.98]" id="whatsapp-submit-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+              Confirm Booking via WhatsApp
+            </button>
+<a class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-surface-dark-elevated text-canvas hover:bg-surface-tint font-title-sm text-xs sm:text-sm transition-colors text-center" href="tel:+260971234567">
+<span class="material-symbols-outlined text-[16px]">call</span>
+              Or Request Direct Phone Callback
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Client Reviews & Verified Lusaka Testimonials -->
+<section class="w-full py-16 lg:py-24 bg-surface-soft shadow-inner" id="reviews">
+<div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+<div class="max-w-xl">
+<span class="inline-block font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold mb-3">
+            4.9 / 5.0 RATED • 180+ VETTED BOOKINGS
+          </span>
+<h2 class="font-display-lg text-display-lg-mobile sm:text-display-lg text-ink leading-tight mb-2">
+            Loved by Lusaka households from Chilenje to Kabulonga.
+          </h2>
+<p class="font-body-md text-body-md text-body-muted">
+            Read what compound residents, busy professionals, and embassy staff say about our crew.
           </p>
 </div>
+<!-- Rating Meter Summary -->
+<div class="bg-canvas p-4 sm:p-5 rounded-2xl shadow-sm min-w-[260px]">
+<div class="flex items-center gap-3 mb-2">
+<span class="font-display-sm text-3xl font-bold text-ink">4.9</span>
+<div>
+<div class="flex text-accent-amber text-xs">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
-<!-- Pillar 2 -->
-<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-sm">
-<div class="w-12 h-12 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-[24px]">payments</span>
+<span class="font-body-sm text-xs text-body-muted">Over 180 verified cleans</span>
 </div>
-<div class="flex flex-col gap-1 min-w-0">
-<h3 class="font-title-sm text-title-sm text-ink">Transparent Zambian Kwacha Pricing</h3>
-<p class="font-body-sm text-body-sm text-body-default">
-            Never surprise add-ons. What we quote is exactly what you pay via mobile money (Airtel/MTN) or card upon satisfaction.
+</div>
+<!-- Tiny Bar Chart -->
+<div class="space-y-1.5 pt-2 border-t border-hairline-soft font-body-sm text-xs text-body-muted">
+<div class="flex items-center gap-2">
+<span class="w-10">5 Star</span>
+<div class="flex-1 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-status-success rounded-full w-[94%]"></div>
+</div>
+<span class="text-ink font-semibold">94%</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-10">4 Star</span>
+<div class="flex-1 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-accent-amber rounded-full w-[5%]"></div>
+</div>
+<span class="text-ink font-semibold">5%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 3-Card Quote Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Review 1 -->
+<div class="bg-canvas rounded-2xl p-6 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-accent-amber mb-3">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-sm sm:text-base text-ink leading-relaxed italic mb-6">
+              “Finding a cleaner who respects your home and arrives punctually at 8am sharp in Chilenje is rare. The K350 rate is completely transparent and fair. My floors have never looked this clean.”
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-hairline-soft">
+<div class="w-10 h-10 rounded-full bg-surface-cream-strong flex items-center justify-center font-title-sm text-secondary font-bold">
+              TM
+            </div>
+<div>
+<p class="font-title-sm text-sm text-ink font-semibold">Thandiwe M.</p>
+<p class="font-body-sm text-xs text-body-muted">Chilenje South Resident</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-canvas rounded-2xl p-6 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-accent-amber mb-3">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-sm sm:text-base text-ink leading-relaxed italic mb-6">
+              “We booked the Deep Cleaning before moving into our house on Bishops Road. Inside every cupboard and sliding rail sanitised. Extraordinary work by the crew.”
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-hairline-soft">
+<div class="w-10 h-10 rounded-full bg-surface-cream-strong flex items-center justify-center font-title-sm text-secondary font-bold">
+              CK
+            </div>
+<div>
+<p class="font-title-sm text-sm text-ink font-semibold">Mr. Chilufya K.</p>
+<p class="font-body-sm text-xs text-body-muted">Bishops Road, Kabulonga</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-canvas rounded-2xl p-6 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-accent-amber mb-3">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-sm sm:text-base text-ink leading-relaxed italic mb-6">
+              “Booked them via WhatsApp in 2 minutes flat. The team arrived with all their own cleaning liquids, mops, and cloths. I didn't need to provide a single thing! Paid via Airtel Money right after inspecting.”
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-hairline-soft">
+<div class="w-10 h-10 rounded-full bg-surface-cream-strong flex items-center justify-center font-title-sm text-secondary font-bold">
+              NP
+            </div>
+<div>
+<p class="font-title-sm text-sm text-ink font-semibold">Natasha P.</p>
+<p class="font-body-sm text-xs text-body-muted">Roma Compound</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: Final Pre-Footer Callout Band -->
+<section class="w-full py-16 lg:py-20 bg-surface-dark text-canvas">
+<div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+<div class="flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
+<div class="max-w-2xl">
+<span class="inline-block font-label-sm text-label-sm uppercase tracking-wider text-accent-amber font-semibold mb-2">
+            No Waiting • Instant Booking
+          </span>
+<h2 class="font-display-lg text-display-lg-mobile sm:text-display-lg text-canvas leading-tight mb-3">
+            Ready for a spotless home this week?
+          </h2>
+<p class="font-body-md text-body-md text-surface-container-highest">
+            Join over 200 satisfied Lusaka families and diplomatic missions. Our vetted crews are on standby for Kabulonga, Roma, Woodlands, and beyond.
           </p>
 </div>
-</div>
-<!-- Pillar 3 -->
-<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-sm">
-<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-[24px]">shield_person</span>
-</div>
-<div class="flex flex-col gap-1 min-w-0">
-<h3 class="font-title-sm text-title-sm text-ink">Police Cleared &amp; Vetted Cleaners</h3>
-<p class="font-body-sm text-body-sm text-body-default">
-            Complete peace of mind. Every team member undergoes criminal record checks, reference validation, and strict hospitality etiquette training.
-          </p>
+<div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-secondary hover:bg-coral-hover text-on-secondary font-title-sm text-title-sm shadow-xl transition-all active:scale-[0.98]" href="https://wa.me/260971234567" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[22px]">chat</span>
+<span>WhatsApp Us Now</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-surface-dark-elevated hover:bg-surface-tint text-canvas font-title-sm text-title-sm transition-colors shadow-sm" href="tel:+260971234567">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span>+260 97 123 4567</span>
+</a>
 </div>
 </div>
 </div>
 </section>
-<!-- Lusaka Testimonial Spotlight -->
-<section class="px-margin-mobile py-space-md">
-<div class="p-space-md rounded-xl bg-surface-container-high flex flex-col gap-space-sm relative overflow-hidden">
-<!-- Decorative Quote Glyphs -->
-<span class="material-symbols-outlined text-secondary/15 text-[64px] absolute -top-2 -right-2 pointer-events-none">format_quote</span>
-<div class="flex items-center gap-space-xs">
-<div class="flex text-accent-amber text-[14px]">
-<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
-<span class="font-label-sm text-label-sm text-body-muted uppercase tracking-wider font-bold">Verified Homeowner</span>
-</div>
-<blockquote class="font-display-sm text-display-sm text-ink italic leading-snug">
-        “They left our 3-bedroom home smelling fresh and looking immaculate before our weekend family braai.”
-      </blockquote>
-<div class="flex items-center justify-between pt-space-xs border-0">
-<div class="flex items-center gap-space-xs">
-<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-cream-strong shrink-0 shadow-sm">
-<img class="w-full h-full object-cover" data-alt="Portrait of an elegant middle-aged Zambian woman smiling warmly with natural braided hair in an outdoor Lusaka residential garden, natural daylight, candid editorial portrait." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArmhPfMp35DyaV9zGSoIZ49o3CuuQj40oCmDEeAfctPnwRqUbeAXTzY5Um1FKZkRWpEjj9M2bo1NpSJwQU3LwtpQ7TFPBmWsdt9paU3Izw3duHqXsG6g6quN89rfr4t2Xaa69Ca2EwZrCJsirnPiQ5PVfaC8Ab4D7a97tgBxKbSGgMb6XxoHt5IZ5qc0wHh0LBUrhqKCEv_Pob6pzSh4sMOxS1-UVzowmyG7oVjdyCLb-fIvB0709w"/>
-</div>
-<div class="flex flex-col">
-<span class="font-title-sm text-title-sm text-ink leading-tight">Mrs. Mutale K.</span>
-<span class="font-body-sm text-body-sm text-body-muted">Kabulonga, Lusaka</span>
-</div>
-</div>
-<a class="font-title-sm text-title-sm text-secondary hover:text-coral-hover inline-flex items-center gap-0.5" data-path="testimonials" href="#">
-<span>Reviews</span>
-<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-</a>
-</div>
-</div>
-</section>
-<!-- Pre-footer Coral Callout Card (callout-card-coral style) -->
-<section class="px-margin-mobile pt-space-sm pb-space-md">
-<div class="p-space-lg rounded-xl bg-secondary text-on-secondary shadow-md flex flex-col gap-space-sm relative overflow-hidden">
-<!-- Ambient Sparkle Icon -->
-<div class="absolute -bottom-4 -right-4 w-28 h-28 rounded-full bg-on-secondary/10 flex items-center justify-center pointer-events-none">
-<span class="material-symbols-outlined text-[48px] text-on-secondary/30">arrow_back_ios_new</span>
-</div>
-<div class="flex items-center gap-space-xs">
-<span class="material-symbols-outlined text-[20px] text-on-secondary">schedule</span>
-<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold text-on-secondary/90">Fast Lusaka Booking</span>
-</div>
-<h2 class="font-display-sm text-display-sm text-on-secondary leading-tight">
-        Ready for a refreshing clean this week?
-      </h2>
-<p class="font-body-md text-body-md text-on-secondary/90">
-        Tap below to lock in your preferred morning or afternoon slot. Same-day dispatched teams available across all Lusaka compounds.
-      </p>
-<div class="pt-space-xs flex flex-col sm:flex-row gap-space-xs">
-<a class="w-full h-12 bg-canvas hover:bg-surface text-ink font-title-sm text-title-sm rounded-xl flex items-center justify-center gap-space-xs shadow-sm transition-colors text-center font-bold" data-path="booking" href="#">
-<span>Schedule Your Clean</span>
-<span class="material-symbols-outlined text-[18px]">chevron_right</span>
-</a>
-<a class="w-full h-12 bg-on-secondary/20 hover:bg-on-secondary/30 text-on-secondary font-title-sm text-title-sm rounded-xl flex items-center justify-center gap-space-xs transition-colors text-center" href="https://wa.me/260971234567?text=Hi%20Lusaka%20Shine%20Pros,%20I'd%20like%20to%20reserve%20a%20slot%20for%20this%20week" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[18px]">chat</span>
-<span>WhatsApp Concierge</span>
-</a>
-</div>
-</div>
-</section>
-</div>
+<!-- Inline Interactive JavaScript for Live Booking Estimator -->
 <script>
-  (function initCalculator() {
-    let baseRate = 550;
-    let multiplier = 1;
+  (function initEstimator() {
+    let currentBasePrice = 350;
+    let currentMultiplier = 1;
+    let serviceName = "Residential Clean";
+    let sizeName = "1–2 Bedroom";
 
-    const sizeBtns = document.querySelectorAll('.quote-size-btn');
-    const freqBtns = document.querySelectorAll('.quote-freq-btn');
-    const totalEl = document.getElementById('calculated-total');
+    const serviceBtns = document.querySelectorAll(".service-btn");
+    const sizeBtns = document.querySelectorAll(".size-btn");
+    const addonCheckboxes = document.querySelectorAll(".addon-checkbox");
+    const neighborhoodSelect = document.getElementById("neighborhood-select");
+    const priceDisplay = document.getElementById("price-display");
+    const summaryService = document.getElementById("summary-service");
+    const summarySize = document.getElementById("summary-size");
+    const summaryAddons = document.getElementById("summary-addons");
+    const summaryZone = document.getElementById("summary-zone");
+    const whatsappBtn = document.getElementById("whatsapp-submit-btn");
 
-    function updateTotal() {
-      if (!totalEl) return;
-      const finalPrice = Math.round(baseRate * multiplier);
-      totalEl.textContent = 'K' + finalPrice;
+    function calculateTotal() {
+      let addonsTotal = 0;
+      let selectedAddonsList = [];
+
+      addonCheckboxes.forEach(cb => {
+        if (cb.checked) {
+          addonsTotal += parseInt(cb.dataset.addonPrice, 10);
+          if (cb.dataset.addon === "carpet") selectedAddonsList.push("Carpet Shampoo");
+          if (cb.dataset.addon === "sofa") selectedAddonsList.push("Sofa Steam");
+          if (cb.dataset.addon === "dust") selectedAddonsList.push("Veranda Wash");
+        }
+      });
+
+      const finalPrice = Math.round((currentBasePrice * currentMultiplier) + addonsTotal);
+
+      if (priceDisplay) {
+        priceDisplay.textContent = "K" + finalPrice;
+      }
+      if (summaryService) summaryService.textContent = serviceName;
+      if (summarySize) summarySize.textContent = sizeName;
+      if (summaryAddons) {
+        summaryAddons.textContent = selectedAddonsList.length > 0 ? selectedAddonsList.join(", ") : "None";
+      }
+      if (summaryZone && neighborhoodSelect) {
+        summaryZone.textContent = neighborhoodSelect.value;
+      }
+
+      return {
+        finalPrice,
+        serviceName,
+        sizeName,
+        addons: selectedAddonsList.join(", ") || "None",
+        zone: neighborhoodSelect ? neighborhoodSelect.value : "Kabulonga"
+      };
     }
 
-    sizeBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        sizeBtns.forEach(b => {
-          b.classList.remove('bg-secondary', 'text-on-secondary', 'shadow-sm');
-          b.classList.add('bg-surface-container-highest', 'text-ink');
+    // Service selector clicks
+    serviceBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        serviceBtns.forEach(b => {
+          b.classList.remove("bg-surface-dark", "text-canvas");
+          b.classList.add("bg-canvas", "text-ink");
         });
-        btn.classList.add('bg-secondary', 'text-on-secondary', 'shadow-sm');
-        btn.classList.remove('bg-surface-container-highest', 'text-ink');
-        baseRate = parseInt(btn.getAttribute('data-rate'), 10);
-        updateTotal();
+        btn.classList.remove("bg-canvas", "text-ink");
+        btn.classList.add("bg-surface-dark", "text-canvas");
+
+        currentBasePrice = parseInt(btn.dataset.price, 10);
+        if (btn.dataset.service === "residential") serviceName = "Residential Standard";
+        if (btn.dataset.service === "deep") serviceName = "Deep & Move-In Reset";
+        if (btn.dataset.service === "office") serviceName = "Office & Commercial";
+
+        calculateTotal();
       });
     });
 
-    freqBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        freqBtns.forEach(b => {
-          b.classList.remove('bg-surface', 'text-ink', 'shadow-sm');
-          b.classList.add('bg-surface-container-highest', 'text-body-muted');
+    // Size selector clicks
+    sizeBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        sizeBtns.forEach(b => {
+          b.classList.remove("bg-surface-dark", "text-canvas");
+          b.classList.add("bg-canvas", "text-ink");
         });
-        btn.classList.add('bg-surface', 'text-ink', 'shadow-sm');
-        btn.classList.remove('bg-surface-container-highest', 'text-body-muted');
-        multiplier = parseFloat(btn.getAttribute('data-discount'));
-        updateTotal();
+        btn.classList.remove("bg-canvas", "text-ink");
+        btn.classList.add("bg-surface-dark", "text-canvas");
+
+        currentMultiplier = parseFloat(btn.dataset.multiplier);
+        if (btn.dataset.size === "small") sizeName = "1–2 Bedroom";
+        if (btn.dataset.size === "medium") sizeName = "3–4 Bedroom";
+        if (btn.dataset.size === "large") sizeName = "5+ Bed / Villa";
+
+        calculateTotal();
       });
     });
+
+    // Addons change
+    addonCheckboxes.forEach(cb => {
+      cb.addEventListener("change", calculateTotal);
+    });
+
+    // Neighborhood change
+    if (neighborhoodSelect) {
+      neighborhoodSelect.addEventListener("change", calculateTotal);
+    }
+
+    // WhatsApp dynamic intent dispatch
+    if (whatsappBtn) {
+      whatsappBtn.addEventListener("click", () => {
+        const details = calculateTotal();
+        const clientName = document.getElementById("client-name") ? document.getElementById("client-name").value.trim() : "";
+        const clientPhone = document.getElementById("client-phone") ? document.getElementById("client-phone").value.trim() : "";
+        const timeSlot = document.getElementById("time-slot") ? document.getElementById("time-slot").value : "Morning";
+        const gateInfo = document.getElementById("client-gate") ? document.getElementById("client-gate").value.trim() : "";
+
+        let message = `Hello Lusaka Shine Pros! I would like to book a clean:%0A` +
+                      `• Service: ${details.serviceName}%0A` +
+                      `• Size: ${details.sizeName}%0A` +
+                      `• Area: ${details.zone}%0A` +
+                      `• Add-ons: ${details.addons}%0A` +
+                      `• Est. Investment: K${details.finalPrice}%0A` +
+                      `• Time: ${timeSlot}%0A`;
+
+        if (clientName) message += `• Name: ${encodeURIComponent(clientName)}%0A`;
+        if (clientPhone) message += `• Contact: ${encodeURIComponent(clientPhone)}%0A`;
+        if (gateInfo) message += `• Gate/Directions: ${encodeURIComponent(gateInfo)}%0A`;
+
+        window.open(`https://wa.me/260971234567?text=${message}`, "_blank");
+      });
+    }
+
+    calculateTotal();
   })();
-</script><footer class="mt-space-xl px-margin-mobile py-space-xl bg-surface-dark text-canvas rounded-t-full"><div class="max-w-md mx-auto flex flex-col gap-space-lg"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-status-success text-[20px]">verified</span><span class="font-label-sm text-label-sm text-status-success uppercase font-bold tracking-wider">100% Vetted Cleaners &amp; Eco Equipment</span></div><div class="flex flex-col gap-space-xs"><span class="font-title-sm text-title-sm text-canvas">Lusaka Neighborhood Coverage</span><p class="font-body-sm text-body-sm text-primary-fixed-dim leading-relaxed">Kabulonga · Woodlands · Chilenje · Rhodes Park · Roma · Avondale · Olympia · Mass Media · Longacres</p></div><div class="flex flex-col gap-space-xs"><span class="font-title-sm text-title-sm text-canvas">Operating Concierge</span><div class="flex items-center gap-space-sm text-body-sm font-body-sm text-primary-fixed-dim"><span class="material-symbols-outlined text-[18px]">schedule</span><span>Mon - Sat: 07:30 – 18:00</span></div><div class="flex items-center gap-space-sm text-body-sm font-body-sm text-primary-fixed-dim"><span class="material-symbols-outlined text-[18px]">location_on</span><span>Great East Road &amp; Leopards Hill, Lusaka</span></div></div><div class="pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-body-muted"><p>© 2025 Lusaka Shine Pros</p><a class="text-secondary-fixed hover:underline" href="tel:+260971234567">+260 97 123 4567</a></div></div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(20,20,19,0.06)]" data-active-classes="text-secondary font-semibold"><div class="px-gutter-mobile pt-space-xs pb-space-xs max-w-md mx-auto flex flex-col gap-space-xs"><div class="flex items-stretch gap-space-sm w-full"><a class="flex-1 h-12 px-space-sm bg-secondary hover:bg-coral-hover text-on-secondary font-title-sm text-title-sm rounded-xl flex items-center justify-center gap-space-xs shadow-[0_2px_8px_rgba(146,74,49,0.24)] transition-colors text-center leading-tight" href="https://wa.me/260971234567?text=Hi%20Lusaka%20Shine%20Pros,%20I'd%20like%20to%20book%20a%20cleaning" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">chat</span><span class="truncate">Book on WhatsApp</span></a><a class="h-12 px-space-md bg-surface-container hover:bg-surface-cream-strong text-ink font-title-sm text-title-sm rounded-xl flex items-center justify-center gap-space-xs transition-colors shrink-0" data-path="booking" href="#"><span class="material-symbols-outlined text-[18px]">calculate</span><span class="hidden xs:inline">Quote</span></a></div><div class="flex justify-around items-center h-12"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] transition-colors text-secondary font-semibold" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-label-sm tracking-normal">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-body-muted hover:text-ink transition-colors" data-path="services" href="#"><span class="material-symbols-outlined text-[22px]">cleaning_services</span><span class="font-label-sm text-label-sm tracking-normal">Services</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-body-muted hover:text-ink transition-colors" data-path="booking" href="#"><span class="material-symbols-outlined text-[22px]">calendar_month</span><span class="font-label-sm text-label-sm tracking-normal">Book</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-body-muted hover:text-ink transition-colors" data-path="testimonials" href="#"><span class="material-symbols-outlined text-[22px]">hotel_class</span><span class="font-label-sm text-label-sm tracking-normal">Reviews</span></a></div></div></nav></body></html>
+</script></main><aside class="fixed bottom-6 right-6 z-40"><a aria-label="Chat on WhatsApp with Lusaka Shine Pros concierge" class="group flex items-center gap-space-sm px-4 py-3 rounded-full bg-surface-dark text-canvas shadow-[0_4px_16px_rgba(20,20,19,0.22)] hover:bg-surface-dark-elevated transition-all active:scale-95" href="https://wa.me/260971234567" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-status-success text-[24px]">chat</span><div class="flex flex-col text-left pr-1"><span class="font-label-sm text-[11px] uppercase tracking-wider text-surface-container-highest">Instant Support</span><span class="font-title-sm text-body-sm text-canvas font-semibold">WhatsApp Concierge</span></div></a></aside><footer class="w-full bg-surface-soft text-body-default mt-space-xl shadow-[0_-1px_6px_rgba(20,20,19,0.02)]"><div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-lg mb-space-xl"><div class="lg:col-span-4 flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-xl bg-surface-dark flex items-center justify-center text-canvas"><span class="material-symbols-outlined text-[18px] text-accent-amber">auto_awesome</span></div><span class="font-display-sm text-display-sm text-ink">Lusaka Shine Pros</span></div><p class="font-body-sm text-body-sm text-body-muted max-w-sm mt-1">Discreet, vetted residential and executive corporate cleaning services tailored for diplomatic missions, corporate headquarters, and high-spec residences across Lusaka.</p><div class="flex items-center gap-2 mt-2"><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-body-default font-label-sm text-label-sm uppercase"><span class="material-symbols-outlined text-status-success text-[16px]">verified</span>Vetted Crews</span><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-body-default font-label-sm text-label-sm uppercase"><span class="material-symbols-outlined text-status-success text-[16px]">eco</span>Eco-Certified</span></div></div><div class="lg:col-span-4 flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-ink mb-2">Neighborhood Coverage</span><div class="grid grid-cols-2 gap-y-2 gap-x-4 font-body-sm text-body-sm text-on-surface-variant"><span>• Kabulonga</span><span>• Olympia</span><span>• Woodlands</span><span>• Avondale</span><span>• Chilenje</span><span>• Mass Media</span><span>• Roma</span><span>• Longacres</span><span>• Rhodes Park</span><span>• Sunningdale</span></div></div><div class="lg:col-span-4 flex flex-col gap-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-ink mb-1">Concierge &amp; Operations</span><div class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-start gap-2"><span class="material-symbols-outlined text-[18px] text-body-muted mt-0.5">schedule</span><div><p class="font-semibold text-ink">Operating Hours</p><p>Mon – Sat: 07:30 – 18:00</p><p class="text-body-muted text-xs">Sunday by executive appointment</p></div></div><div class="flex items-start gap-2"><span class="material-symbols-outlined text-[18px] text-body-muted mt-0.5">call</span><div><p class="font-semibold text-ink">Direct Line &amp; WhatsApp</p><p>+260 97 123 4567</p></div></div><div class="flex items-start gap-2"><span class="material-symbols-outlined text-[18px] text-body-muted mt-0.5">payments</span><div><p class="font-semibold text-ink">Accepted Settlement</p><p>Airtel Money, MTN MoMo, Electronic Bank Transfer &amp; Cash</p></div></div></div></div></div><div class="pt-space-md mt-space-md bg-canvas/50 rounded-xl px-space-md py-space-sm flex flex-col md:flex-row items-center justify-between gap-space-sm text-center md:text-left"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-status-success text-[20px]">verified_user</span><span class="font-title-sm text-body-sm text-ink">100% Client Satisfaction Guarantee &amp; Discreet Service Assurance</span></div><p class="font-body-sm text-body-sm text-body-muted">© 2025 Lusaka Shine Pros. All rights reserved. Lusaka, Zambia.</p></div></div></footer></body></html>

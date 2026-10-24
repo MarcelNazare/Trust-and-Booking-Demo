@@ -1,729 +1,434 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="web_standard" name="shell-type"/>
 
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary": "#ffffff", "tertiary-fixed": "#98f3e0", "surface-dark-elevated": "#252320", "on-background": "#1d1b15", "tertiary-container": "#00201b", "accent-amber": "#e8a55a", "error": "#ba1a1a", "outline": "#7a776f", "on-surface-variant": "#494740", "inverse-surface": "#333029", "on-secondary-fixed-variant": "#75331c", "primary-fixed-dim": "#cac6c2", "secondary-fixed": "#ffdbd0", "coral-hover": "#a9583e", "on-surface": "#1d1b15", "surface-bright": "#fff9ed", "tertiary": "#000000", "on-primary-fixed": "#1c1b19", "surface": "#fff9ed", "primary": "#000000", "on-secondary-fixed": "#390c00", "surface-soft": "#f5f0e8", "surface-cream-strong": "#e8e0d2", "primary-fixed": "#e6e2de", "tertiary-fixed-dim": "#7cd7c4", "on-tertiary-fixed": "#00201b", "secondary-fixed-dim": "#ffb59d", "status-error": "#c64545", "on-primary-container": "#868380", "body-default": "#3d3d3a", "surface-dark": "#181715", "on-error-container": "#93000a", "ink": "#141413", "outline-variant": "#cbc6bd", "surface-container-highest": "#e8e2d7", "canvas": "#faf9f5", "status-success": "#5db872", "on-primary": "#ffffff", "on-secondary": "#ffffff", "surface-variant": "#e8e2d7", "inverse-on-surface": "#f6f0e5", "surface-tint": "#605e5b", "surface-container-high": "#ede7dd", "body-muted": "#6c6a64", "on-tertiary-container": "#339282", "inverse-primary": "#cac6c2", "on-error": "#ffffff", "on-secondary-container": "#78361f", "on-tertiary-fixed-variant": "#005045", "background": "#fff9ed", "surface-container": "#f3ede2", "hairline": "#e6dfd8", "surface-container-lowest": "#ffffff", "hairline-soft": "#ebe6df", "secondary": "#924a31", "secondary-container": "#fea183", "primary-container": "#1c1b19", "surface-dim": "#dfd9cf", "surface-container-low": "#f9f3e8", "error-container": "#ffdad6", "on-primary-fixed-variant": "#484644" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-xl": "2.5rem", "gutter": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "margin-mobile": "1.25rem", "space-lg": "1.5rem", "gutter-mobile": "1rem", "space-md": "1rem", "margin": "3rem" }, fontFamily: { "display-sm": ["Newsreader"], "title-sm": ["Manrope"], "body-md": ["Manrope"], "display-xl-mobile": ["Newsreader"], "label-md": ["Manrope"], "display-md": ["Newsreader"], "body-sm": ["Manrope"], "body-lg": ["Manrope"], "label-sm": ["Manrope"], "display-lg-mobile": ["Newsreader"], "display-xl": ["Newsreader"], "display-lg": ["Newsreader"], "title-lg": ["Manrope"], "title-md": ["Manrope"] }, fontSize: { "display-sm": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.2px", "fontWeight": "400" }], "title-sm": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display-xl-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.5px", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "16px", "letterSpacing": "0.1px", "fontWeight": "600" }], "display-md": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.5px", "fontWeight": "400" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-sm": ["12px", { "lineHeight": "14px", "letterSpacing": "1.2px", "fontWeight": "700" }], "display-lg-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.3px", "fontWeight": "400" }], "display-xl": ["64px", { "lineHeight": "68px", "letterSpacing": "-1.5px", "fontWeight": "400" }], "display-lg": ["48px", { "lineHeight": "52px", "letterSpacing": "-1.0px", "fontWeight": "400" }], "title-lg": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.2px", "fontWeight": "600" }], "title-md": ["18px", { "lineHeight": "24px", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface text-ink font-body-md min-h-screen flex flex-col antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(20,20,19,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Lusaka Shine Pros Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XBfp6ZKh_cPf3pfGaYSYKhbquGPpTTdLDIuUsuSS9h22VfnF976dtbBDzV4SC3XtHfrivP0G8x32YsZ-7obS_NT-POOtvJb0LOSZWHLHR--GmuJ0aw0d5NBaYndzCoXqsNaZn8O7isNvBJ6NyrpxiEL8s-ayIqKdXAEQ2KrXlVjdpuVWZaq6x45TsodYY_2tGfYpHzdo3O-nQD5CNICOMsENmafJdybG6l9TQo1_CUitVVujFEggsp0zE"/><div class="flex flex-col min-w-0"><span class="font-title-sm text-title-sm text-ink truncate leading-tight">Lusaka Shine Pros</span><span class="font-label-sm text-label-sm uppercase text-secondary font-bold tracking-wider">Home</span></div></div><div class="flex items-center gap-space-xs shrink-0"><a aria-label="Call Concierge Directly" class="w-11 h-11 flex items-center justify-center rounded-xl bg-surface-container text-ink hover:text-secondary hover:bg-surface-cream-strong transition-colors" href="tel:+260971234567"><span class="material-symbols-outlined text-[20px]">call</span></a><a class="relative p-0.5 rounded-full hover:opacity-90 transition-opacity" data-path="booking" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD31i2YhoRRPC26HvXowS4uIuuOIS-kVcuJQLQB2qHMoGpQk_uxg2jYrJGu56ViVS6po_ebZSGKpY0B07dECHjqBtUEzfnYMd1qDhVl2sipZSoHUHROMNSEyvgG_oa8JVc3ZwFLuPgwrJLJ-UVxnMbwYsgqQ-XwH1RrjTnSkGxPpLkgewzeJjbxqf5xX37kQRSUKKO9tG6FesLJnLKg311KoOLN4CR6CzunolqyQURwD0D8QjEEWwKF"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-status-success"></span></a></div></div></header><main class="flex-1 flex flex-col w-full pt-16 bg-surface pb-36"><div class="flex flex-col w-full">
+<!-- Hero Section -->
+<section class="px-margin-mobile pt-space-md pb-space-lg flex flex-col gap-space-md">
+<!-- Trust Pill -->
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface">
+<div class="flex text-accent-amber text-[13px] tracking-tight">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-body-default font-semibold">200+ Lusaka Homes &amp; Offices</span>
+</div>
+<!-- Editorial Warm Headline -->
+<div class="flex flex-col gap-space-xs">
+<p class="font-label-md text-label-md text-secondary font-bold uppercase tracking-wider">Muli bwanji Lusaka!</p>
+<h1 class="font-display-lg-mobile text-display-lg-mobile text-ink tracking-tight">
+        Spotless Lusaka homes, cared for like family.
+      </h1>
+<p class="font-body-md text-body-md text-body-default leading-relaxed mt-1">
+        Reliable, background-checked cleaning pros arriving at your doorstep across Kabulonga, Woodlands, Chilenje, Roma, and greater Lusaka.
+      </p>
+</div>
+<!-- Visual Storytelling Hero Vignette -->
+<div class="relative w-full h-52 rounded-xl overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="An immaculate modern living room interior in an upscale Lusaka suburban home with warm sunlight pouring across polished hardwood floors, cream linen sofas, lush potted fiddle leaf fig plants, and a professional smiling Zambian female cleaner neatly arranging fresh textiles in modern warm earth tone attire, architectural aesthetic, editorial warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTbaVF9f-vMRyWmU8WgRpWlFPB7nHvHJjrIkriQt5ypDPE5Si2dHEGAz4kZjcUuFrGRsSAj64Tc17WlniNzSv5wwUjeDud0jdbZhUni_ZQxShXq-nr9dY2yi1SWhNzchUuP-KVo4hYdLKzVyKhxOKo61CRJd4bNHQb6OgdEDqvAF5WcipLljzK1zG4ezvgmU2lRuU0IaJxk_H6e6nCSRyvgfvE4UngM5pw9DilTiQKmCcpZnQMXqKS"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dark/60 via-transparent to-transparent flex items-end p-space-sm">
+<div class="flex items-center gap-space-xs text-on-primary">
+<span class="material-symbols-outlined text-status-success text-[18px]">verified_user</span>
+<span class="font-label-sm text-label-sm tracking-wide">Equipped with non-toxic botanical solutions</span>
+</div>
+</div>
+</div>
+<!-- Action Buttons Row -->
+<div class="flex flex-col sm:flex-row gap-space-xs pt-space-xs">
+<a class="w-full h-12 bg-secondary hover:bg-coral-hover text-on-secondary font-title-sm text-title-sm rounded-xl flex items-center justify-center gap-space-xs shadow-sm transition-colors text-center" data-path="booking" href="#">
+<span>Book in 60 Seconds</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="w-full h-12 bg-surface-container hover:bg-surface-cream-strong text-ink font-title-sm text-title-sm rounded-xl flex items-center justify-center gap-space-xs transition-colors text-center" href="https://wa.me/260971234567?text=Hi%20Lusaka%20Shine%20Pros,%20I'd%20like%20to%20chat%20about%20a%20cleaning" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-status-success">chat</span>
+<span>Chat on WhatsApp</span>
+</a>
+</div>
+<!-- Quick Value Micro-Chips -->
+<div class="grid grid-cols-1 gap-2 pt-space-xs">
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-body-muted">
+<span class="w-5 h-5 rounded-full bg-status-success/15 text-status-success flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<span>Eco-friendly, child &amp; pet safe supplies included</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-body-muted">
+<span class="w-5 h-5 rounded-full bg-status-success/15 text-status-success flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<span>Flexible slots: Same-day or scheduled recurring</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-body-muted">
+<span class="w-5 h-5 rounded-full bg-status-success/15 text-status-success flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<span>100% Police-cleared, vetted &amp; trained teams</span>
+</div>
+</div>
+</section>
+<!-- Interactive Neighborhood Coverage Bar -->
+<section class="px-margin-mobile py-space-sm bg-surface-container-low">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">pin_drop</span>
+<span class="font-label-md text-label-md text-ink">Active Neighborhoods</span>
+</div>
+<span class="font-label-sm text-label-sm text-status-success font-bold uppercase tracking-wider">Crews Available Now</span>
+</div>
+<div class="flex flex-wrap gap-1.5 mt-space-xs">
+<span class="px-2.5 py-1 rounded-full bg-surface text-ink text-body-sm font-body-sm shadow-sm">Kabulonga</span>
+<span class="px-2.5 py-1 rounded-full bg-surface text-ink text-body-sm font-body-sm shadow-sm">Woodlands</span>
+<span class="px-2.5 py-1 rounded-full bg-surface text-ink text-body-sm font-body-sm shadow-sm">Chilenje</span>
+<span class="px-2.5 py-1 rounded-full bg-surface text-ink text-body-sm font-body-sm shadow-sm">Roma</span>
+<span class="px-2.5 py-1 rounded-full bg-surface text-ink text-body-sm font-body-sm shadow-sm">Rhodes Park</span>
+<span class="px-2.5 py-1 rounded-full bg-surface text-ink text-body-sm font-body-sm shadow-sm">Olympia</span>
+<span class="px-2.5 py-1 rounded-full bg-surface text-ink text-body-sm font-body-sm shadow-sm">Mass Media</span>
+</div>
+</section>
+<!-- Lusaka Services Preview -->
+<section class="px-margin-mobile pt-space-lg pb-space-md flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Services &amp; Upfront Rates</span>
+</div>
+<h2 class="font-display-sm text-display-sm text-ink">
+        Signature Zambian Care for Every Space
+      </h2>
+<p class="font-body-sm text-body-sm text-body-default">
+        No hidden surcharges. Clear Kwacha quotes tailored to Lusaka residences and modern executive suites.
+      </p>
+</div>
+<!-- 3 Core Service Cards -->
+<div class="flex flex-col gap-space-md">
+<!-- Service 1: Residential -->
+<article class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<div class="relative w-full h-36 rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A warm and tidy master bedroom in Kabulonga Lusaka with freshly laundered white bedding, polished wooden bedside table, warm bedside lamp light, clean sunlit curtains, high detail, interior design photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJHe1G_Xju_mJTTSD8ZGnEwpKmsv38kPPY9tXCTnC2gKlEcpO6DOgt3zF7YpgUTFKoha9ibhktb2muZa_Rnq-_2JGsz2NvffCmdBXgfZRRb-hg_cDjdgDfZmZoEouwqO1uDmY0CfSSOgEdRg66KeOcDWXQJKlzJ8sLqwdt5qevMDP98zgVvtQKTtZ8KJj211XkCQbBUtbR8dthsPwz7K6NdvVTef4uJs1dt-F0QmQRQat-suagLgFQ"/>
+<div class="absolute top-2 right-2 px-2.5 py-1 rounded-full bg-surface/90 backdrop-blur-sm text-ink font-title-sm text-title-sm">
+            From <span class="font-bold text-secondary">K350</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-ink">Residential Care</h3>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold">MOST POPULAR</span>
+</div>
+<p class="font-body-sm text-body-sm text-body-default">
+            Deep floor mopping, thorough dusting, scrubbed sanitised bathrooms, sparkling kitchen counters, and crisp linen turnover.
+          </p>
+</div>
+<div class="grid grid-cols-2 gap-1 text-body-sm font-body-sm text-body-muted py-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-status-success">check_circle</span>
+<span>Mopping &amp; dust removal</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-status-success">check_circle</span>
+<span>Bathroom sanitising</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-status-success">check_circle</span>
+<span>Kitchen surfaces</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-status-success">check_circle</span>
+<span>Bed making &amp; linens</span>
+</div>
+</div>
+<a class="w-full h-11 bg-surface-cream-strong hover:bg-secondary hover:text-on-secondary text-ink font-title-sm text-title-sm rounded-xl flex items-center justify-center gap-space-xs transition-colors" data-path="booking" href="#">
+<span>Book Residential Clean</span>
+<span class="material-symbols-outlined text-[18px]">calendar_add_on</span>
+</a>
+</article>
+<!-- Service 2: Office & Commercial (Executive Dark Card variant for depth hierarchy) -->
+<article class="p-space-md rounded-xl bg-surface-dark text-canvas shadow-md flex flex-col gap-space-sm">
+<div class="relative w-full h-36 rounded-xl overflow-hidden bg-surface-dark-elevated">
+<img class="w-full h-full object-cover" data-alt="A clean modern office workspace in Rhodes Park Lusaka with sleek boardroom table, spotless glass conference walls, ergonomic chairs, polished concrete flooring, executive lighting, interior corporate photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmDHC-X0thBqXNPmKN897rm1fhK_jhgSuyVE9r2A3HgFx5j9pAqICVS_CBPilcpfg3MLHICXIpBzF9jKiRmbn8ffGPV2E2NxCQ5_qCUtld0m0h-dgYm71HZ5lfPLYQbV-dUTTse62PR7brgX6rUNZsHQixxPF2YnzLW13CLQQa9z7RfSJSS898cba3UXv6gtn6tv32pTHCu8s6VefEsqP9hQ8oEBUHlnw_bbPtVPRVB-SdakzDSwLr"/>
+<div class="absolute top-2 right-2 px-2.5 py-1 rounded-full bg-surface-dark/85 backdrop-blur-sm text-canvas font-title-sm text-title-sm">
+            From <span class="font-bold text-accent-amber">K650</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-canvas">Office &amp; Commercial</h3>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-tertiary-container text-tertiary-fixed font-bold">AFTER-HOURS AVAIL</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim">
+            Workstations, glass partitions, executive boardroom detailing, waste removal, and pristine tea station &amp; breakroom upkeep.
+          </p>
+</div>
+<div class="grid grid-cols-2 gap-1 text-body-sm font-body-sm text-primary-fixed-dim py-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">check_circle</span>
+<span>Workstation sanitising</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">check_circle</span>
+<span>Meeting room glass</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">check_circle</span>
+<span>Waste management</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">check_circle</span>
+<span>Breakroom coffee hubs</span>
+</div>
+</div>
+<a class="w-full h-11 bg-surface-dark-elevated hover:bg-secondary text-canvas font-title-sm text-title-sm rounded-xl flex items-center justify-center gap-space-xs transition-colors" data-path="booking" href="#">
+<span>Book Office Clean</span>
+<span class="material-symbols-outlined text-[18px]">business_center</span>
+</a>
+</article>
+<!-- Service 3: Move-in / Deep Clean -->
+<article class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<div class="relative w-full h-36 rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A sun-drenched, freshly washed open kitchen in Woodlands Lusaka with sparkling quartz countertops, polished oven, clean open wooden shelves, spotless tile backsplashes, and gleaming taps, cinematic architectural clean finish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOcZpBhK3l9-sjpTHstpFmPayu3LED8TK0Oj6s4_0ijwP1V1VUV1F89ytUcE9SxkVHR4uQEgG6rjrSswNGL_yCjhOhwCp_tRUt2QsgHYdb2AN9SC768BNpTH8CKDur48RdGXgMhDhJaQ8efW9U7dK3CkyN6A7RRdBUabiM4vF38eyxMF6JbauZADB0nvakVrPriYZyfnaiQQpr_Ck6StlI011JJU7t_CRNi3qjMMFP-TDijGa4p4qg"/>
+<div class="absolute top-2 right-2 px-2.5 py-1 rounded-full bg-surface/90 backdrop-blur-sm text-ink font-title-sm text-title-sm">
+            From <span class="font-bold text-secondary">K850</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-ink">Move-in / Deep Clean</h3>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-body-default font-bold">TURNKEY REFRESH</span>
+</div>
+<p class="font-body-sm text-body-sm text-body-default">
+            Inside kitchen cabinets and oven, window tracks, deep tile grout scrubbing, baseboards, and post-renovation dust extraction.
+          </p>
+</div>
+<div class="grid grid-cols-2 gap-1 text-body-sm font-body-sm text-body-muted py-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-status-success">check_circle</span>
+<span>Inside oven &amp; fridge</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-status-success">check_circle</span>
+<span>Window sills &amp; tracks</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-status-success">check_circle</span>
+<span>Tile grout scrubbing</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-status-success">check_circle</span>
+<span>Post-tenancy audit</span>
+</div>
+</div>
+<a class="w-full h-11 bg-surface-cream-strong hover:bg-secondary hover:text-on-secondary text-ink font-title-sm text-title-sm rounded-xl flex items-center justify-center gap-space-xs transition-colors" data-path="booking" href="#">
+<span>Book Deep Cleaning</span>
+<span class="material-symbols-outlined text-[18px]">cleaning_services</span>
+</a>
+</article>
+</div>
+</section>
+<!-- Interactive Instant Estimate Calculator Widget -->
+<section class="px-margin-mobile py-space-md">
+<div class="p-space-md rounded-xl bg-surface-container shadow-sm flex flex-col gap-space-sm" id="quote-widget">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">calculate</span>
+<h3 class="font-title-md text-title-md text-ink">Instant Lusaka Estimate</h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Live Kwacha Rate</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">Select Space Size</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="quote-size-btn h-11 px-2 rounded-xl bg-surface-container-highest text-ink font-title-sm text-title-sm transition-all text-center focus:outline-none" data-label="1-2 Beds" data-rate="350" type="button">
+            1-2 Bed
+          </button>
+<button class="quote-size-btn h-11 px-2 rounded-xl bg-secondary text-on-secondary font-title-sm text-title-sm shadow-sm transition-all text-center focus:outline-none" data-label="3-4 Beds" data-rate="550" type="button">
+            3-4 Bed
+          </button>
+<button class="quote-size-btn h-11 px-2 rounded-xl bg-surface-container-highest text-ink font-title-sm text-title-sm transition-all text-center focus:outline-none" data-label="5+ Beds / Office" data-rate="850" type="button">
+            Estate
+          </button>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-1">
+<label class="font-label-md text-label-md text-on-surface">Frequency Discount</label>
+<div class="grid grid-cols-2 gap-2">
+<button class="quote-freq-btn h-10 px-2 rounded-xl bg-surface text-ink font-label-md text-label-md shadow-sm transition-colors text-center" data-discount="1" type="button">
+            One-time Clean
+          </button>
+<button class="quote-freq-btn h-10 px-2 rounded-xl bg-surface-container-highest text-body-muted font-label-md text-label-md transition-colors text-center" data-discount="0.85" type="button">
+            Weekly (-15%)
+          </button>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface flex items-center justify-between shadow-sm mt-1">
+<div>
+<span class="font-label-sm text-label-sm text-body-muted block uppercase">Estimated Investment</span>
+<span class="font-title-lg text-title-lg text-secondary font-bold" id="calculated-total">K550</span>
+</div>
+<a class="h-10 px-space-sm bg-secondary hover:bg-coral-hover text-on-secondary font-title-sm text-title-sm rounded-xl flex items-center justify-center gap-1 transition-colors" data-path="booking" href="#" id="calc-book-link">
+<span>Lock In Slot</span>
+<span class="material-symbols-outlined text-[16px]">check</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Why Lusaka Neighbours Choose Us -->
+<section class="px-margin-mobile pt-space-md pb-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">handshake</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Built for Lusaka Living</span>
+</div>
+<h2 class="font-display-sm text-display-sm text-ink">
+        Why Lusaka Neighbours Choose Us
+      </h2>
+<p class="font-body-sm text-body-sm text-body-default">
+        From gate clearance in Roma Park to rapid arrival in Woodlands, our operations are tuned to our capital city's lifestyle.
+      </p>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Pillar 1 -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">alarm_on</span>
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<h3 class="font-title-sm text-title-sm text-ink">Reliability You Can Set Your Watch To</h3>
+<p class="font-body-sm text-body-sm text-body-default">
+            Punctual arrival in your compound or gated estate. Our crews understand Lusaka traffic and arrive on time, every time.
+          </p>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">payments</span>
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<h3 class="font-title-sm text-title-sm text-ink">Transparent Zambian Kwacha Pricing</h3>
+<p class="font-body-sm text-body-sm text-body-default">
+            Never surprise add-ons. What we quote is exactly what you pay via mobile money (Airtel/MTN) or card upon satisfaction.
+          </p>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">shield_person</span>
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<h3 class="font-title-sm text-title-sm text-ink">Police Cleared &amp; Vetted Cleaners</h3>
+<p class="font-body-sm text-body-sm text-body-default">
+            Complete peace of mind. Every team member undergoes criminal record checks, reference validation, and strict hospitality etiquette training.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Lusaka Testimonial Spotlight -->
+<section class="px-margin-mobile py-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-high flex flex-col gap-space-sm relative overflow-hidden">
+<!-- Decorative Quote Glyphs -->
+<span class="material-symbols-outlined text-secondary/15 text-[64px] absolute -top-2 -right-2 pointer-events-none">format_quote</span>
+<div class="flex items-center gap-space-xs">
+<div class="flex text-accent-amber text-[14px]">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-body-muted uppercase tracking-wider font-bold">Verified Homeowner</span>
+</div>
+<blockquote class="font-display-sm text-display-sm text-ink italic leading-snug">
+        “They left our 3-bedroom home smelling fresh and looking immaculate before our weekend family braai.”
+      </blockquote>
+<div class="flex items-center justify-between pt-space-xs border-0">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-cream-strong shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Portrait of an elegant middle-aged Zambian woman smiling warmly with natural braided hair in an outdoor Lusaka residential garden, natural daylight, candid editorial portrait." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArmhPfMp35DyaV9zGSoIZ49o3CuuQj40oCmDEeAfctPnwRqUbeAXTzY5Um1FKZkRWpEjj9M2bo1NpSJwQU3LwtpQ7TFPBmWsdt9paU3Izw3duHqXsG6g6quN89rfr4t2Xaa69Ca2EwZrCJsirnPiQ5PVfaC8Ab4D7a97tgBxKbSGgMb6XxoHt5IZ5qc0wHh0LBUrhqKCEv_Pob6pzSh4sMOxS1-UVzowmyG7oVjdyCLb-fIvB0709w"/>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-ink leading-tight">Mrs. Mutale K.</span>
+<span class="font-body-sm text-body-sm text-body-muted">Kabulonga, Lusaka</span>
+</div>
+</div>
+<a class="font-title-sm text-title-sm text-secondary hover:text-coral-hover inline-flex items-center gap-0.5" data-path="testimonials" href="#">
+<span>Reviews</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Pre-footer Coral Callout Card (callout-card-coral style) -->
+<section class="px-margin-mobile pt-space-sm pb-space-md">
+<div class="p-space-lg rounded-xl bg-secondary text-on-secondary shadow-md flex flex-col gap-space-sm relative overflow-hidden">
+<!-- Ambient Sparkle Icon -->
+<div class="absolute -bottom-4 -right-4 w-28 h-28 rounded-full bg-on-secondary/10 flex items-center justify-center pointer-events-none">
+<span class="material-symbols-outlined text-[48px] text-on-secondary/30">arrow_back_ios_new</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-on-secondary">schedule</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold text-on-secondary/90">Fast Lusaka Booking</span>
+</div>
+<h2 class="font-display-sm text-display-sm text-on-secondary leading-tight">
+        Ready for a refreshing clean this week?
+      </h2>
+<p class="font-body-md text-body-md text-on-secondary/90">
+        Tap below to lock in your preferred morning or afternoon slot. Same-day dispatched teams available across all Lusaka compounds.
+      </p>
+<div class="pt-space-xs flex flex-col sm:flex-row gap-space-xs">
+<a class="w-full h-12 bg-canvas hover:bg-surface text-ink font-title-sm text-title-sm rounded-xl flex items-center justify-center gap-space-xs shadow-sm transition-colors text-center font-bold" data-path="booking" href="#">
+<span>Schedule Your Clean</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+<a class="w-full h-12 bg-on-secondary/20 hover:bg-on-secondary/30 text-on-secondary font-title-sm text-title-sm rounded-xl flex items-center justify-center gap-space-xs transition-colors text-center" href="https://wa.me/260971234567?text=Hi%20Lusaka%20Shine%20Pros,%20I'd%20like%20to%20reserve%20a%20slot%20for%20this%20week" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>WhatsApp Concierge</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+<script>
+  (function initCalculator() {
+    let baseRate = 550;
+    let multiplier = 1;
 
-<style>
-  @layer base {
-    html, body { margin: 0; padding: 0; }
-    body { overscroll-behavior: none; }
-    main > :first-child { margin-top: 0 !important; }
-    main > :last-child { margin-bottom: 0 !important; }
-  }
-  ::-webkit-scrollbar { display: none; }
-</style>
+    const sizeBtns = document.querySelectorAll('.quote-size-btn');
+    const freqBtns = document.querySelectorAll('.quote-freq-btn');
+    const totalEl = document.getElementById('calculated-total');
 
-<script src="https://cdn.tailwindcss.com"></script>
-<script id="tailwind-config">
-tailwind.config = {
-  darkMode: "class",
-  theme: {
-    extend: {
-      colors: {
-        "on-primary-fixed": "#1c1b1b",
-        "surface-bright": "#faf9f9",
-        "surface-container": "#efeded",
-        "canvas-soft": "#fafafa",
-        "body-muted": "#4d4d4d",
-        "on-error-container": "#93000a",
-        "tertiary": "#000000",
-        "status-error": "#ee0000",
-        "surface-container-lowest": "#ffffff",
-        "surface-container-high": "#e9e8e8",
-        "tertiary-fixed": "#efdbff",
-        "telemetry-cyan": "#50e3c2",
-        "hairline": "#ebebeb",
-        "inverse-surface": "#303031",
-        "surface-container-highest": "#e3e2e2",
-        "on-tertiary": "#ffffff",
-        "on-surface-variant": "#444748",
-        "on-surface": "#1b1c1c",
-        "secondary": "#0057c0",
-        "on-secondary-fixed-variant": "#004397",
-        "inverse-primary": "#c8c6c5",
-        "on-secondary-container": "#fefcff",
-        "secondary-fixed-dim": "#aec6ff",
-        "outline-variant": "#c4c7c7",
-        "on-tertiary-fixed-variant": "#6600b7",
-        "on-tertiary-fixed": "#2b0052",
-        "error-container": "#ffdad6",
-        "primary": "#000000",
-        "secondary-container": "#006ff0",
-        "primary-fixed-dim": "#c8c6c5",
-        "status-warning": "#f5a623",
-        "surface-container-low": "#f5f3f3",
-        "primary-container": "#1c1b1b",
-        "secondary-fixed": "#d8e2ff",
-        "tertiary-fixed-dim": "#dbb8ff",
-        "error": "#ba1a1a",
-        "tertiary-container": "#2b0052",
-        "on-background": "#1b1c1c",
-        "hairline-strong": "#a1a1a1",
-        "outline": "#747878",
-        "surface-tint": "#5f5e5e",
-        "canvas-recessed": "#f5f5f5",
-        "surface": "#faf9f9",
-        "on-primary-container": "#858383",
-        "background": "#faf9f9",
-        "surface-variant": "#e3e2e2",
-        "on-secondary-fixed": "#001a43",
-        "on-primary": "#ffffff",
-        "surface-dim": "#dbdad9",
-        "on-tertiary-container": "#a75dfa",
-        "primary-fixed": "#e5e2e1",
-        "on-secondary": "#ffffff",
-        "inverse-on-surface": "#f2f0f0",
-        "telemetry-pink": "#ff0080",
-        "on-error": "#ffffff",
-        "on-primary-fixed-variant": "#474746"
-      },
-      borderRadius: {
-        "DEFAULT": "0.25rem",
-        "lg": "0.5rem",
-        "xl": "0.75rem",
-        "full": "9999px"
-      },
-      spacing: {
-        "space-sm": "0.5rem",
-        "space-md": "1rem",
-        "gutter-mobile": "1rem",
-        "space-lg": "1.5rem",
-        "space-xl": "2rem",
-        "margin": "2rem",
-        "gutter": "1.5rem",
-        "space-xs": "0.25rem",
-        "margin-mobile": "1rem"
-      },
-      fontFamily: {
-        "body-sm": ["Inter", "system-ui", "sans-serif"],
-        "body-md": ["Inter", "system-ui", "sans-serif"],
-        "body-lg": ["Inter", "system-ui", "sans-serif"],
-        "label-sm": ["Inter", "system-ui", "sans-serif"],
-        "label-md": ["Inter", "system-ui", "sans-serif"],
-        "headline-sm": ["Hanken Grotesk", "system-ui", "sans-serif"],
-        "headline-md": ["Hanken Grotesk", "system-ui", "sans-serif"],
-        "headline-lg": ["Hanken Grotesk", "system-ui", "sans-serif"],
-        "headline-xl": ["Hanken Grotesk", "system-ui", "sans-serif"],
-        "headline-xl-mobile": ["Hanken Grotesk", "system-ui", "sans-serif"],
-        "caption-mono": ["ui-monospace", "SFMono-Regular", "Menlo", "Consolas", "monospace"],
-        "code-sm": ["ui-monospace", "SFMono-Regular", "Menlo", "Consolas", "monospace"]
-      },
-      fontSize: {
-        "body-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
-        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
-        "code-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
-        "headline-lg": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.035em", "fontWeight": "500" }],
-        "headline-xl": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.035em", "fontWeight": "500" }],
-        "headline-sm": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.02em", "fontWeight": "500" }],
-        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
-        "headline-md": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.025em", "fontWeight": "500" }],
-        "caption-mono": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "400" }],
-        "headline-xl-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.035em", "fontWeight": "500" }],
-        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
-        "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }]
-      }
+    function updateTotal() {
+      if (!totalEl) return;
+      const finalPrice = Math.round(baseRate * multiplier);
+      totalEl.textContent = 'K' + finalPrice;
     }
-  }
-};
-</script>
-</head>
-<body class="bg-canvas-soft font-body-md text-on-surface antialiased">
-<header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-md border-b border-hairline">
-  <div class="h-16 max-w-[1200px] mx-auto px-space-md sm:px-gutter flex items-center justify-between gap-space-md">
-    <div class="flex items-center gap-space-md flex-shrink-0">
-      <img alt="Copperbelt Car Hire Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WDKPaVZjlfl-wcwfA7XgSGb6tNrBBGO4NGCA_9xaXxlQwX30l3GZezJ2ny9cueWsRvi3xqzOmfX0CI9x73UDF7aHEK96KZqUEP_O9nb8EflJFCh29ZJ4752YRk-WIlI3yoiyRk8KYh11DaHa4yAMU3VOoDsdWlRFTcV30x1xsi5EtZxPeSxFNiWNLhjLS0qA-iIAZKPUKcXoLP3bPz7_iKBdJfWbdUNGsFx-OS7qjyKvJuER2UAbUvvdU"/>
-      <div class="flex flex-col">
-        <span class="font-headline-sm text-headline-sm uppercase tracking-tight text-primary leading-none">Copperbelt</span>
-        <span class="font-caption-mono text-caption-mono text-on-surface-variant uppercase tracking-widest text-[10px]">Fleet Logistics</span>
-      </div>
-    </div>
-    <nav class="hidden md:flex items-center gap-space-lg">
-      <a aria-current="page" class="transition-colors py-space-xs text-primary font-semibold border-b-2 border-primary" href="#">Fleet</a>
-      <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" href="#">Locations</a>
-      <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" href="#">Rates</a>
-      <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" href="#">FAQ</a>
-    </nav>
-    <div class="flex items-center gap-space-sm sm:gap-space-md flex-shrink-0">
-      <a class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface border border-hairline hover:bg-canvas-recessed transition-all px-space-md py-space-sm rounded-full hidden sm:inline-flex items-center" href="#">Contact Desk</a>
-      <a class="font-label-sm text-label-sm uppercase tracking-wider text-on-primary bg-primary hover:bg-primary-container transition-all px-space-md py-space-sm rounded-full inline-flex items-center" href="#">Sign In</a>
-      <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-        <span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
-      </div>
-    </div>
-  </div>
-</header>
 
-<main class="w-full pt-16 bg-canvas-soft min-h-[calc(100vh-64px)]">
-  <div class="max-w-[1200px] mx-auto px-space-md sm:px-gutter py-space-xl">
-    <div class="flex flex-col w-full">
-
-      <!-- HERO -->
-      <div class="relative w-full overflow-hidden rounded-xl bg-surface-container-lowest border border-hairline mb-space-xl">
-        <div class="relative z-10 p-space-lg sm:p-space-xl md:p-12 flex flex-col gap-space-lg">
-          <div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-sm border-b border-hairline">
-            <div class="flex items-center gap-space-xs">
-              <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-              <span class="font-caption-mono text-caption-mono uppercase tracking-widest text-on-surface-variant font-medium">
-                COPPERBELT DISPATCH // FLEET INVENTORY v2.4
-              </span>
-            </div>
-            <div class="flex items-center gap-space-sm font-caption-mono text-caption-mono text-body-muted">
-              <span>LAT -12.969</span>
-              <span>•</span>
-              <span>LON 28.636</span>
-              <span>•</span>
-              <span class="text-secondary font-medium">SAT_COMM: CONNECTED</span>
-            </div>
-          </div>
-          <div class="max-w-3xl flex flex-col gap-space-md">
-            <h1 class="font-headline-xl text-headline-xl text-primary tracking-tight leading-[1.08] text-balance">
-              Direct vehicle dispatch across the Copperbelt.
-            </h1>
-            <p class="font-body-lg text-body-lg text-body-muted max-w-2xl text-pretty leading-relaxed">
-              Real-time fleet availability for Ndola, Kitwe, and Chingola mining corridors. Zero reservation deposit required for verified corporate accounts.
-            </p>
-          </div>
-          <div class="flex flex-wrap items-center gap-space-md pt-space-xs">
-            <a class="rounded-full bg-primary text-on-primary hover:bg-primary-container px-space-xl py-space-sm font-label-md text-label-md transition-all inline-flex items-center gap-space-xs" href="#fleet">
-              <span>Check availability</span>
-              <span class="material-symbols-outlined text-[16px]">arrow_downward</span>
-            </a>
-            <button class="rounded-full bg-surface-container-lowest text-on-surface border border-hairline hover:bg-canvas-recessed px-space-lg py-space-sm font-label-md text-label-md transition-all inline-flex items-center gap-space-xs" id="rateCardBtn">
-              <span class="material-symbols-outlined text-[16px] text-body-muted">download</span>
-              <span>Download rate card (.CSV)</span>
-            </button>
-            <span class="font-caption-mono text-caption-mono text-body-muted ml-auto hidden md:inline-flex items-center gap-space-xs">
-              <span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
-              SLAs: 45-min gate dispatch
-            </span>
-          </div>
-        </div>
-
-        <!-- BOOKING ENQUIRY -->
-        <div class="border-t border-hairline bg-surface-container-low p-space-md sm:p-space-lg">
-          <div class="flex items-center justify-between mb-space-sm">
-            <div class="font-caption-mono text-caption-mono text-body-muted uppercase tracking-wider flex items-center gap-space-xs">
-              <span class="material-symbols-outlined text-[14px]">tune</span>
-              DISPATCH_QUERY_PARAMETERS
-            </div>
-            <div class="font-caption-mono text-caption-mono text-on-surface-variant">AUTO_ROUTING: MINE-PASS VERIFIED</div>
-          </div>
-          <form class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-space-sm items-end" id="dispatchForm" onsubmit="event.preventDefault(); window.location.href='#fleet';">
-            <div class="lg:col-span-3 flex flex-col gap-space-xs">
-              <label class="font-label-sm text-label-sm text-body-muted" for="pickupLoc">Pickup Location</label>
-              <div class="relative">
-                <select class="w-full h-10 px-3 pr-8 rounded-lg bg-surface-container-lowest border border-hairline text-on-surface font-body-sm text-body-sm focus:outline-none focus:border-primary appearance-none cursor-pointer" id="pickupLoc">
-                  <option value="NLA">Ndola Airport Hub (NLA)</option>
-                  <option value="KIW">Kitwe Central Depot (Parklands)</option>
-                  <option value="CHG">Chingola Commercial Gate</option>
-                  <option value="SLW">Solwezi West Terminal</option>
-                </select>
-                <span class="material-symbols-outlined absolute right-2.5 top-2.5 pointer-events-none text-body-muted text-[18px]">expand_more</span>
-              </div>
-            </div>
-            <div class="lg:col-span-3 flex flex-col gap-space-xs">
-              <label class="font-label-sm text-label-sm text-body-muted" for="dropLoc">Drop-off Location</label>
-              <div class="relative">
-                <select class="w-full h-10 px-3 pr-8 rounded-lg bg-surface-container-lowest border border-hairline text-on-surface font-body-sm text-body-sm focus:outline-none focus:border-primary appearance-none cursor-pointer" id="dropLoc">
-                  <option value="SAME">Same as pickup depot</option>
-                  <option value="NLA">Ndola Airport Hub (NLA)</option>
-                  <option value="KIW">Kitwe Central Depot (Parklands)</option>
-                  <option value="CHG">Chingola Commercial Gate</option>
-                  <option value="SLW">Solwezi West Terminal</option>
-                </select>
-                <span class="material-symbols-outlined absolute right-2.5 top-2.5 pointer-events-none text-body-muted text-[18px]">expand_more</span>
-              </div>
-            </div>
-            <div class="lg:col-span-2 flex flex-col gap-space-xs">
-              <label class="font-label-sm text-label-sm text-body-muted" for="pickupDate">Pickup Window</label>
-              <input class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest border border-hairline text-on-surface font-caption-mono text-caption-mono focus:outline-none focus:border-primary" id="pickupDate" type="date" value="2025-05-12"/>
-            </div>
-            <div class="lg:col-span-2 flex flex-col gap-space-xs">
-              <label class="font-label-sm text-label-sm text-body-muted" for="returnDate">Return Window</label>
-              <input class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest border border-hairline text-on-surface font-caption-mono text-caption-mono focus:outline-none focus:border-primary" id="returnDate" type="date" value="2025-05-16"/>
-            </div>
-            <div class="lg:col-span-2 flex flex-col">
-              <button class="w-full h-10 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md transition-all flex items-center justify-center gap-space-xs" type="submit">
-                <span class="material-symbols-outlined text-[16px]">search</span>
-                <span>Search fleet</span>
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-
-      <!-- FLEET GRID -->
-      <section class="flex flex-col gap-space-lg mb-space-xl scroll-mt-20" id="fleet">
-        <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md border-b border-hairline pb-space-md">
-          <div class="flex flex-col gap-space-xs">
-            <span class="font-caption-mono text-caption-mono uppercase tracking-widest text-on-surface-variant font-medium">
-              FLEET_INDEX [6 UNITS CURRENTLY TRACKED]
-            </span>
-            <h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
-              Fleet specifications &amp; daily rates.
-            </h2>
-          </div>
-          <div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-lg border border-hairline overflow-x-auto" id="filterBar">
-            <button class="filter-tab px-space-md py-1.5 rounded text-on-primary bg-primary font-label-sm text-label-sm transition-all whitespace-nowrap" data-filter="all">All Fleet</button>
-            <button class="filter-tab px-space-md py-1.5 rounded text-body-muted hover:text-on-surface hover:bg-surface-container-lowest font-label-sm text-label-sm transition-all whitespace-nowrap" data-filter="4x4">4x4 Corridors</button>
-            <button class="filter-tab px-space-md py-1.5 rounded text-body-muted hover:text-on-surface hover:bg-surface-container-lowest font-label-sm text-label-sm transition-all whitespace-nowrap" data-filter="executive">Executive Utility</button>
-            <button class="filter-tab px-space-md py-1.5 rounded text-body-muted hover:text-on-surface hover:bg-surface-container-lowest font-label-sm text-label-sm transition-all whitespace-nowrap" data-filter="commercial">Commercial Pickups</button>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-space-md" id="vehicleGrid">
-          <!-- UNIT 1 -->
-          <article class="vehicle-card flex flex-col justify-between bg-surface-container-lowest border border-hairline rounded-lg p-space-md sm:p-space-lg transition-all hover:border-hairline-strong" data-category="4x4 commercial">
-            <div>
-              <div class="flex items-center justify-between mb-space-sm">
-                <span class="font-caption-mono text-caption-mono text-body-muted uppercase tracking-wider">UNIT_ID: HLX-28-01</span>
-                <span class="font-caption-mono text-caption-mono px-2 py-0.5 rounded-full bg-secondary/10 text-secondary border border-secondary/20 font-medium inline-flex items-center gap-1">
-                  <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Available
-                </span>
-              </div>
-              <h3 class="font-headline-sm text-headline-sm text-primary tracking-tight mb-space-xs">Toyota Hilux 2.8 GD-6</h3>
-              <p class="font-caption-mono text-caption-mono text-on-surface-variant mb-space-md">4x4 Double Cab // Mine-Spec Corridor</p>
-              <div class="p-space-md rounded-lg bg-surface-container-low mb-space-md flex items-baseline justify-between">
-                <div class="flex items-baseline gap-1">
-                  <span class="font-headline-lg text-headline-lg text-primary leading-none">$135</span>
-                  <span class="font-caption-mono text-caption-mono text-body-muted">/day</span>
-                </div>
-                <span class="font-caption-mono text-caption-mono text-body-muted">ZMW 3,450 /day</span>
-              </div>
-              <div class="relative w-full h-36 mb-space-md overflow-hidden rounded bg-surface-container-low">
-                <img class="w-full h-full object-cover" alt="Toyota Hilux double cab pickup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6G5TVgvBH3rnO68UfsMTpRQeu9-hbSbuRot7CQn-mo2sT6qfJ0Lw7Kczav20qzCGgSwYmMxzdlRmxk6HEE9fttOks8KgulHkXNQt64s5L01U3zISk6R7rnK85U3AmdHD-b2ncsdFDcQemoP9k9rLr6T3qY0kAaYtBqR_vB9NWzoXqs58-J91SNtBalTUCknHYySOROnOO37sKenPyeIrAIWmv_LdQjN5pZayYhBRg5VTNSKOw9beTQg"/>
-                <div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 backdrop-blur-sm px-2 py-0.5 rounded font-caption-mono text-caption-mono text-[10px] text-on-surface">DEPOT: NDOLA HUB</div>
-              </div>
-              <div class="grid grid-cols-2 gap-y-2 gap-x-3 pt-space-xs pb-space-md border-b border-hairline font-body-sm text-body-sm text-body-muted">
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">group</span><span>5 Passengers</span></div>
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">settings</span><span>6-Speed Auto</span></div>
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">local_gas_station</span><span>Diesel 4WD</span></div>
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">shield</span><span>Heavy Terrain Pack</span></div>
-              </div>
-            </div>
-            <div class="pt-space-md mt-auto flex items-center justify-between gap-space-sm">
-              <span class="font-caption-mono text-caption-mono text-body-muted">INSTANT_DISPATCH</span>
-              <button class="reserve-btn rounded-full bg-primary text-on-primary hover:bg-primary-container px-space-md py-1.5 font-label-sm text-label-sm transition-all inline-flex items-center gap-1" data-unit="Hilux 2.8 GD-6">
-                <span>Reserve unit</span><span class="material-symbols-outlined text-[14px]">arrow_forward</span>
-              </button>
-            </div>
-          </article>
-
-          <!-- UNIT 2 -->
-          <article class="vehicle-card flex flex-col justify-between bg-surface-container-lowest border border-hairline rounded-lg p-space-md sm:p-space-lg transition-all hover:border-hairline-strong" data-category="4x4 executive">
-            <div>
-              <div class="flex items-center justify-between mb-space-sm">
-                <span class="font-caption-mono text-caption-mono text-body-muted uppercase tracking-wider">UNIT_ID: PRD-28-04</span>
-                <span class="font-caption-mono text-caption-mono px-2 py-0.5 rounded-full bg-secondary/10 text-secondary border border-secondary/20 font-medium inline-flex items-center gap-1">
-                  <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Available
-                </span>
-              </div>
-              <h3 class="font-headline-sm text-headline-sm text-primary tracking-tight mb-space-xs">Land Cruiser Prado TX-L</h3>
-              <p class="font-caption-mono text-caption-mono text-on-surface-variant mb-space-md">Executive SUV // Site &amp; Highway Tier 1</p>
-              <div class="p-space-md rounded-lg bg-surface-container-low mb-space-md flex items-baseline justify-between">
-                <div class="flex items-baseline gap-1">
-                  <span class="font-headline-lg text-headline-lg text-primary leading-none">$160</span>
-                  <span class="font-caption-mono text-caption-mono text-body-muted">/day</span>
-                </div>
-                <span class="font-caption-mono text-caption-mono text-body-muted">ZMW 4,100 /day</span>
-              </div>
-              <div class="relative w-full h-36 mb-space-md overflow-hidden rounded bg-surface-container-low">
-                <img class="w-full h-full object-cover" alt="Land Cruiser Prado TX-L" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWA29IIuJmFsJR_Kl6Q7Uhtdk2bJUGGJBjppo7_IOVLcOkC0K3T8Ue5jKQZJmJeZTI3lzVrJGvf2HHoH0q46uwF3b0eBxAAjf2zabmfu3adfidjq74KK1L2xHo2-NTXQ2OlhzQ3Qvt3oWOzt9aYGjd4HAW9VoT45-ydVhwYN5xxNNuPCGUr5jRIGYsVOyOWgPfeDpHsthfUzrgxsc5lQncpdIM-EBEAZzsNQ0aT2t2No1aLkzUlAip-w"/>
-                <div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 backdrop-blur-sm px-2 py-0.5 rounded font-caption-mono text-caption-mono text-[10px] text-on-surface">DEPOT: KITWE CENTRAL</div>
-              </div>
-              <div class="grid grid-cols-2 gap-y-2 gap-x-3 pt-space-xs pb-space-md border-b border-hairline font-body-sm text-body-sm text-body-muted">
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">group</span><span>7 Passengers</span></div>
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">settings</span><span>Automatic Trans</span></div>
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">local_gas_station</span><span>Diesel 4WD</span></div>
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">height</span><span>High Clearance 220mm</span></div>
-              </div>
-            </div>
-            <div class="pt-space-md mt-auto flex items-center justify-between gap-space-sm">
-              <span class="font-caption-mono text-caption-mono text-body-muted">INSTANT_DISPATCH</span>
-              <button class="reserve-btn rounded-full bg-primary text-on-primary hover:bg-primary-container px-space-md py-1.5 font-label-sm text-label-sm transition-all inline-flex items-center gap-1" data-unit="Land Cruiser Prado TX-L">
-                <span>Reserve unit</span><span class="material-symbols-outlined text-[14px]">arrow_forward</span>
-              </button>
-            </div>
-          </article>
-
-          <!-- UNIT 3 (Booked) -->
-          <article class="vehicle-card flex flex-col justify-between bg-surface-container-lowest border border-hairline rounded-lg p-space-md sm:p-space-lg transition-all opacity-85 hover:border-hairline-strong" data-category="4x4 commercial">
-            <div>
-              <div class="flex items-center justify-between mb-space-sm">
-                <span class="font-caption-mono text-caption-mono text-body-muted uppercase tracking-wider">UNIT_ID: RNG-20-02</span>
-                <span class="font-caption-mono text-caption-mono px-2 py-0.5 rounded-full bg-surface-container-high text-body-muted border border-hairline font-medium inline-flex items-center gap-1">
-                  <span class="w-1.5 h-1.5 rounded-full bg-body-muted"></span> Booked
-                </span>
-              </div>
-              <h3 class="font-headline-sm text-headline-sm text-primary tracking-tight mb-space-xs">Ford Ranger Wildtrak 4x4</h3>
-              <p class="font-caption-mono text-caption-mono text-on-surface-variant mb-space-md">2.0 Bi-Turbo // Heavy Payload Package</p>
-              <div class="p-space-md rounded-lg bg-surface-container-low mb-space-md flex items-baseline justify-between">
-                <div class="flex items-baseline gap-1">
-                  <span class="font-headline-lg text-headline-lg text-primary leading-none">$140</span>
-                  <span class="font-caption-mono text-caption-mono text-body-muted">/day</span>
-                </div>
-                <span class="font-caption-mono text-caption-mono text-body-muted">ZMW 3,580 /day</span>
-              </div>
-              <div class="relative w-full h-36 mb-space-md overflow-hidden rounded bg-surface-container-low">
-                <img class="w-full h-full object-cover grayscale-[40%]" alt="Ford Ranger Wildtrak" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhYQREjrJlhz4-rZfz7q0o_uMGOrpc6HD82iMEqO8P3T6P461xnZrGYr0C4UNWM8y6MC7P9hnWTza67Nou7_eQ8qh1ucqybFWaCKZkpz8CeGz41uIdwhUwuxgnTvJ7SqfbZpK4z7Acy_G8Nt8Hg0NuO8xSZ0OVLmC6bCtjcKeEyBVrXPguKfR0538DbG0r3_mirFMLPUJ8CitKLUjxDPDEGUGcsKqrcQ2mqo269TurCqshuvSkKlD2kw"/>
-                <div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 backdrop-blur-sm px-2 py-0.5 rounded font-caption-mono text-caption-mono text-[10px] text-body-muted">IN TRANSIT: SOLWEZI</div>
-              </div>
-              <div class="grid grid-cols-2 gap-y-2 gap-x-3 pt-space-xs pb-space-md border-b border-hairline font-body-sm text-body-sm text-body-muted">
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">group</span><span>5 Passengers</span></div>
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">settings</span><span>10-Speed Auto</span></div>
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">local_gas_station</span><span>Diesel 4WD</span></div>
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">construction</span><span>Mine-Spec Rollbar</span></div>
-              </div>
-            </div>
-            <div class="pt-space-md mt-auto flex items-center justify-between gap-space-sm">
-              <span class="font-caption-mono text-caption-mono text-body-muted">AVAIL_FROM: 18_MAY</span>
-              <button class="waitlist-btn rounded-full bg-surface-container text-body-muted hover:text-on-surface hover:bg-surface-variant border border-hairline px-space-md py-1.5 font-label-sm text-label-sm transition-all" data-unit="Ford Ranger Wildtrak">Join waitlist</button>
-            </div>
-          </article>
-
-          <!-- UNIT 4 -->
-          <article class="vehicle-card flex flex-col justify-between bg-surface-container-lowest border border-hairline rounded-lg p-space-md sm:p-space-lg transition-all hover:border-hairline-strong" data-category="4x4 executive">
-            <div>
-              <div class="flex items-center justify-between mb-space-sm">
-                <span class="font-caption-mono text-caption-mono text-body-muted uppercase tracking-wider">UNIT_ID: FTN-28-09</span>
-                <span class="font-caption-mono text-caption-mono px-2 py-0.5 rounded-full bg-secondary/10 text-secondary border border-secondary/20 font-medium inline-flex items-center gap-1">
-                  <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Available
-                </span>
-              </div>
-              <h3 class="font-headline-sm text-headline-sm text-primary tracking-tight mb-space-xs">Toyota Fortuner 2.8 VX</h3>
-              <p class="font-caption-mono text-caption-mono text-on-surface-variant mb-space-md">Midsize Executive SUV // Cross-Corridor</p>
-              <div class="p-space-md rounded-lg bg-surface-container-low mb-space-md flex items-baseline justify-between">
-                <div class="flex items-baseline gap-1">
-                  <span class="font-headline-lg text-headline-lg text-primary leading-none">$125</span>
-                  <span class="font-caption-mono text-caption-mono text-body-muted">/day</span>
-                </div>
-                <span class="font-caption-mono text-caption-mono text-body-muted">ZMW 3,200 /day</span>
-              </div>
-              <div class="relative w-full h-36 mb-space-md overflow-hidden rounded bg-surface-container-low">
-                <img class="w-full h-full object-cover" alt="Toyota Fortuner 2.8 VX" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-XiQWx-LQhvuJsyw23gPKGzt2sLDs6wAioXduv2Rt1sPK_UgKjG-mCDE7G6he9aDon1RjBPuzmt_Lxjq__HFIe9nIz7egfTMs68p1asCifjSFi1_M1v9HPi0p4JOucFTR1oyqOMAM86bYdXb4AVvrZlOtdb3oF_KW_UkC8LNmpgr7GA6xpSgJ8Jgznig4p9wKY4tnTHgUmg84CpQ01-OJr0GDUlK_EbvvU8ZUSBF7LWWcoGQYnxIGeg"/>
-                <div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 backdrop-blur-sm px-2 py-0.5 rounded font-caption-mono text-caption-mono text-[10px] text-on-surface">DEPOT: NDOLA HUB</div>
-              </div>
-              <div class="grid grid-cols-2 gap-y-2 gap-x-3 pt-space-xs pb-space-md border-b border-hairline font-body-sm text-body-sm text-body-muted">
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">group</span><span>7 Passengers</span></div>
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">settings</span><span>Automatic Trans</span></div>
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">local_gas_station</span><span>Diesel 2.8 GD-6</span></div>
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">workspace_premium</span><span>Executive Spec Leather</span></div>
-              </div>
-            </div>
-            <div class="pt-space-md mt-auto flex items-center justify-between gap-space-sm">
-              <span class="font-caption-mono text-caption-mono text-body-muted">INSTANT_DISPATCH</span>
-              <button class="reserve-btn rounded-full bg-primary text-on-primary hover:bg-primary-container px-space-md py-1.5 font-label-sm text-label-sm transition-all inline-flex items-center gap-1" data-unit="Toyota Fortuner 2.8 VX">
-                <span>Reserve unit</span><span class="material-symbols-outlined text-[14px]">arrow_forward</span>
-              </button>
-            </div>
-          </article>
-
-          <!-- UNIT 5 -->
-          <article class="vehicle-card flex flex-col justify-between bg-surface-container-lowest border border-hairline rounded-lg p-space-md sm:p-space-lg transition-all hover:border-hairline-strong" data-category="4x4 commercial">
-            <div>
-              <div class="flex items-center justify-between mb-space-sm">
-                <span class="font-caption-mono text-caption-mono text-body-muted uppercase tracking-wider">UNIT_ID: DMX-30-07</span>
-                <span class="font-caption-mono text-caption-mono px-2 py-0.5 rounded-full bg-secondary/10 text-secondary border border-secondary/20 font-medium inline-flex items-center gap-1">
-                  <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Available
-                </span>
-              </div>
-              <h3 class="font-headline-sm text-headline-sm text-primary tracking-tight mb-space-xs">Isuzu D-Max 3.0 V-Cross</h3>
-              <p class="font-caption-mono text-caption-mono text-on-surface-variant mb-space-md">Reinforced Utility // Heavy Duty Undercarriage</p>
-              <div class="p-space-md rounded-lg bg-surface-container-low mb-space-md flex items-baseline justify-between">
-                <div class="flex items-baseline gap-1">
-                  <span class="font-headline-lg text-headline-lg text-primary leading-none">$115</span>
-                  <span class="font-caption-mono text-caption-mono text-body-muted">/day</span>
-                </div>
-                <span class="font-caption-mono text-caption-mono text-body-muted">ZMW 2,950 /day</span>
-              </div>
-              <div class="relative w-full h-36 mb-space-md overflow-hidden rounded bg-surface-container-low">
-                <img class="w-full h-full object-cover" alt="Isuzu D-Max V-Cross" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEp6MViTGunYD8Pz-CVIvVUah5UfE9H8WTMRToglUehGU8N4i3S2jYxJ2_xFGj9mqH7sdaAmxXTRKm7U-3WIfOb_LZ3IoNJeXgja3xqu1z8Jsvla31KdBElqWVFKWhUQsaQinVsxeBVxdvEYOuidpVbQxZiVPffoGLJGFo5eT6hZ4Rm0osQnpzGN5cvkPhvVM8mt4kml8eVaU4rOIVZFYFN1-S9NfnNMC8gTNKODyFf9WEIOjb9CqM_w"/>
-                <div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 backdrop-blur-sm px-2 py-0.5 rounded font-caption-mono text-caption-mono text-[10px] text-on-surface">DEPOT: CHINGOLA GATE</div>
-              </div>
-              <div class="grid grid-cols-2 gap-y-2 gap-x-3 pt-space-xs pb-space-md border-b border-hairline font-body-sm text-body-sm text-body-muted">
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">group</span><span>5 Passengers</span></div>
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">settings</span><span>6-Speed Auto</span></div>
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">local_gas_station</span><span>Diesel 4WD</span></div>
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">travel_explore</span><span>Reinforced Sump Guard</span></div>
-              </div>
-            </div>
-            <div class="pt-space-md mt-auto flex items-center justify-between gap-space-sm">
-              <span class="font-caption-mono text-caption-mono text-body-muted">INSTANT_DISPATCH</span>
-              <button class="reserve-btn rounded-full bg-primary text-on-primary hover:bg-primary-container px-space-md py-1.5 font-label-sm text-label-sm transition-all inline-flex items-center gap-1" data-unit="Isuzu D-Max 3.0 V-Cross">
-                <span>Reserve unit</span><span class="material-symbols-outlined text-[14px]">arrow_forward</span>
-              </button>
-            </div>
-          </article>
-
-          <!-- UNIT 6 (Booked) -->
-          <article class="vehicle-card flex flex-col justify-between bg-surface-container-lowest border border-hairline rounded-lg p-space-md sm:p-space-lg transition-all opacity-85 hover:border-hairline-strong" data-category="executive">
-            <div>
-              <div class="flex items-center justify-between mb-space-sm">
-                <span class="font-caption-mono text-caption-mono text-body-muted uppercase tracking-wider">UNIT_ID: RAV-25-11</span>
-                <span class="font-caption-mono text-caption-mono px-2 py-0.5 rounded-full bg-surface-container-high text-body-muted border border-hairline font-medium inline-flex items-center gap-1">
-                  <span class="w-1.5 h-1.5 rounded-full bg-body-muted"></span> Booked
-                </span>
-              </div>
-              <h3 class="font-headline-sm text-headline-sm text-primary tracking-tight mb-space-xs">Toyota RAV4 AWD Hybrid</h3>
-              <p class="font-caption-mono text-caption-mono text-on-surface-variant mb-space-md">Urban Corridor Compact // High Fuel Efficiency</p>
-              <div class="p-space-md rounded-lg bg-surface-container-low mb-space-md flex items-baseline justify-between">
-                <div class="flex items-baseline gap-1">
-                  <span class="font-headline-lg text-headline-lg text-primary leading-none">$95</span>
-                  <span class="font-caption-mono text-caption-mono text-body-muted">/day</span>
-                </div>
-                <span class="font-caption-mono text-caption-mono text-body-muted">ZMW 2,450 /day</span>
-              </div>
-              <div class="relative w-full h-36 mb-space-md overflow-hidden rounded bg-surface-container-low">
-                <img class="w-full h-full object-cover grayscale-[40%]" alt="Toyota RAV4 AWD Hybrid" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-vw6sBcIw84CRZtQdEB7jYkxK0rfSk5YqMcCiwRZ3hZ_zzbSd4jg3UoYX29qDQzfF3j933yg_U-PtgovF0FwX4QwPKNTvDI4VvRRbJbvcpwESeDbJGUhlN96DN-1w8L_khRRsAZd8fqgTE6_OPsdAbvzqbDKlMwE_26mm5VOMjDCVV2iHBBXvCryEbQptSLQyqctfWJiUt9FuOMdVrV4PnNAYGixP1W-TALl08-s32tPkPdypj8n10A"/>
-                <div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 backdrop-blur-sm px-2 py-0.5 rounded font-caption-mono text-caption-mono text-[10px] text-body-muted">DEPOT: NDOLA AIRPORT</div>
-              </div>
-              <div class="grid grid-cols-2 gap-y-2 gap-x-3 pt-space-xs pb-space-md border-b border-hairline font-body-sm text-body-sm text-body-muted">
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">group</span><span>5 Passengers</span></div>
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">settings</span><span>E-CVT Drive</span></div>
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">bolt</span><span>Petrol / Hybrid AWD</span></div>
-                <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">eco</span><span>Urban Corridor Spec</span></div>
-              </div>
-            </div>
-            <div class="pt-space-md mt-auto flex items-center justify-between gap-space-sm">
-              <span class="font-caption-mono text-caption-mono text-body-muted">AVAIL_FROM: 15_MAY</span>
-              <button class="waitlist-btn rounded-full bg-surface-container text-body-muted hover:text-on-surface hover:bg-surface-variant border border-hairline px-space-md py-1.5 font-label-sm text-label-sm transition-all" data-unit="Toyota RAV4 Hybrid">Notify availability</button>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- LOGISTICS -->
-      <section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
-        <div class="lg:col-span-8 flex flex-col bg-surface-container-lowest border border-hairline rounded-lg overflow-hidden">
-          <div class="p-space-md border-b border-hairline flex items-center justify-between">
-            <div class="flex items-center gap-space-xs font-caption-mono text-caption-mono text-primary font-medium uppercase tracking-wider">
-              <span class="material-symbols-outlined text-[16px] text-secondary">hub</span>
-              <span>DISPATCH_DEPOT_NETWORK // COPPERBELT_CORRIDOR</span>
-            </div>
-            <span class="font-caption-mono text-caption-mono text-body-muted">4 NODES ACTIVE</span>
-          </div>
-          <div class="overflow-x-auto">
-            <table class="w-full text-left border-collapse">
-              <thead>
-                <tr class="bg-surface-container-low border-b border-hairline font-caption-mono text-caption-mono text-body-muted uppercase tracking-wider">
-                  <th class="py-2.5 px-space-md">Depot Hub</th>
-                  <th class="py-2.5 px-space-md">Physical Sector</th>
-                  <th class="py-2.5 px-space-md">Hours / Gate</th>
-                  <th class="py-2.5 px-space-md text-right">Radio Dispatch</th>
-                </tr>
-              </thead>
-              <tbody class="font-body-sm text-body-sm divide-y divide-hairline">
-                <tr class="hover:bg-canvas-recessed transition-colors">
-                  <td class="py-3 px-space-md font-medium text-primary flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Ndola International (NLA)</td>
-                  <td class="py-3 px-space-md text-on-surface-variant font-caption-mono text-caption-mono">Terminal 1 Apron Gate 3</td>
-                  <td class="py-3 px-space-md text-body-muted">24 / 7 Continuous</td>
-                  <td class="py-3 px-space-md text-right font-caption-mono text-caption-mono text-primary">+260 212 612 001</td>
-                </tr>
-                <tr class="hover:bg-canvas-recessed transition-colors">
-                  <td class="py-3 px-space-md font-medium text-primary flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Kitwe Central Depot</td>
-                  <td class="py-3 px-space-md text-on-surface-variant font-caption-mono text-caption-mono">Plot 448 Parklands Commercial</td>
-                  <td class="py-3 px-space-md text-body-muted">05:30 - 22:00 CAT</td>
-                  <td class="py-3 px-space-md text-right font-caption-mono text-caption-mono text-primary">+260 212 224 889</td>
-                </tr>
-                <tr class="hover:bg-canvas-recessed transition-colors">
-                  <td class="py-3 px-space-md font-medium text-primary flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Chingola Commercial Gate</td>
-                  <td class="py-3 px-space-md text-on-surface-variant font-caption-mono text-caption-mono">Kabundi Industrial Spine</td>
-                  <td class="py-3 px-space-md text-body-muted">06:00 - 20:00 CAT</td>
-                  <td class="py-3 px-space-md text-right font-caption-mono text-caption-mono text-primary">+260 212 711 405</td>
-                </tr>
-                <tr class="hover:bg-canvas-recessed transition-colors">
-                  <td class="py-3 px-space-md font-medium text-primary flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Solwezi West Terminal</td>
-                  <td class="py-3 px-space-md text-on-surface-variant font-caption-mono text-caption-mono">Kansanshi Mine Access Rd</td>
-                  <td class="py-3 px-space-md text-body-muted">06:00 - 21:00 CAT</td>
-                  <td class="py-3 px-space-md text-right font-caption-mono text-caption-mono text-primary">+260 218 821 119</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="p-space-sm bg-surface-container-low border-t border-hairline flex items-center justify-between text-body-muted font-caption-mono text-caption-mono">
-            <span>GEOFENCE TELEMETRY: ACTIVE ON ALL MINING HAUL ROADS</span>
-            <span class="text-secondary font-medium">RECOVERY TEAM ON-CALL</span>
-          </div>
-        </div>
-
-        <div class="lg:col-span-4 bg-primary text-on-primary rounded-lg border border-hairline p-space-md flex flex-col justify-between font-caption-mono text-caption-mono">
-          <div>
-            <div class="flex items-center justify-between pb-space-sm border-b border-primary-container text-body-muted">
-              <div class="flex items-center gap-1.5">
-                <span class="w-2.5 h-2.5 rounded-full bg-[#ff5f56]"></span>
-                <span class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]"></span>
-                <span class="w-2.5 h-2.5 rounded-full bg-[#27c93f]"></span>
-                <span class="ml-2 text-on-primary-container">copperbelt-cli v2.4</span>
-              </div>
-              <span class="text-body-muted">BASH</span>
-            </div>
-            <div class="mt-space-md flex flex-col gap-space-xs text-surface-container-lowest">
-              <p class="text-body-muted">// Instant automated dispatch trigger</p>
-              <p class="text-telemetry-cyan font-semibold flex items-center gap-1">
-                <span class="text-body-muted">$</span> copperbelt dispatch --depot ndola --unit hlx-28-01
-              </p>
-              <p class="text-surface-dim mt-space-xs">&gt; Verifying corporate telemetry credentials...</p>
-              <p class="text-surface-dim">&gt; Unit [HLX-28-01] geofence released.</p>
-              <p class="text-surface-dim">&gt; Gate pass generated: <span class="text-telemetry-cyan">#CPB-9982-NDL</span></p>
-              <p class="text-telemetry-cyan mt-space-xs">&gt; Status: DISPATCH_CONFIRMED [ETA: 12 MIN]</p>
-            </div>
-          </div>
-          <div class="pt-space-md mt-space-md border-t border-primary-container flex items-center justify-between text-on-primary-container text-[11px]">
-            <span>ENTERPRISE REST API</span>
-            <button class="text-surface-container-lowest hover:text-telemetry-cyan transition-colors flex items-center gap-1" id="copyCliBtn">
-              <span class="material-symbols-outlined text-[14px]">content_copy</span>
-              <span>Copy snippet</span>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <!-- CORPORATE BANNER -->
-      <div class="w-full rounded-lg bg-surface-container-low border border-hairline p-space-md sm:p-space-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
-        <div class="flex items-start gap-space-md">
-          <div class="w-10 h-10 rounded-full bg-surface-container-lowest border border-hairline flex items-center justify-center flex-shrink-0">
-            <span class="material-symbols-outlined text-primary text-[20px]">corporate_fare</span>
-          </div>
-          <div>
-            <h4 class="font-label-md text-label-md text-primary font-semibold">Corporate Fleet Accounts &amp; Long-Term Mining Leases</h4>
-            <p class="font-body-sm text-body-sm text-body-muted">Direct consolidated billing, dedicated standby units, and cross-border Copperbelt corridor transit clearance.</p>
-          </div>
-        </div>
-        <a class="rounded-full bg-surface-container-lowest border border-hairline text-on-surface hover:bg-canvas-recessed px-space-lg py-space-sm font-label-sm text-label-sm whitespace-nowrap transition-all flex-shrink-0" href="#">Contact Commercial Desk →</a>
-      </div>
-
-      <!-- TOAST -->
-      <div class="fixed bottom-6 right-6 z-50 transform translate-y-16 opacity-0 transition-all duration-200 pointer-events-none bg-primary text-on-primary px-space-md py-2.5 rounded-lg shadow-lg font-caption-mono text-caption-mono flex items-center gap-2 border border-hairline" id="toast">
-        <span class="material-symbols-outlined text-[16px] text-telemetry-cyan">check_circle</span>
-        <span id="toastMsg">Action completed successfully.</span>
-      </div>
-
-      <script>
-        const filterTabs = document.querySelectorAll('.filter-tab');
-        const vehicleCards = document.querySelectorAll('.vehicle-card');
-
-        filterTabs.forEach(tab => {
-          tab.addEventListener('click', () => {
-            filterTabs.forEach(t => {
-              t.classList.remove('bg-primary', 'text-on-primary');
-              t.classList.add('text-body-muted');
-            });
-            tab.classList.add('bg-primary', 'text-on-primary');
-            tab.classList.remove('text-body-muted');
-
-            const filter = tab.getAttribute('data-filter');
-            vehicleCards.forEach(card => {
-              const categories = card.getAttribute('data-category') || '';
-              if (filter === 'all' || categories.includes(filter)) {
-                card.classList.remove('hidden');
-                card.classList.add('flex');
-              } else {
-                card.classList.add('hidden');
-                card.classList.remove('flex');
-              }
-            });
-          });
+    sizeBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        sizeBtns.forEach(b => {
+          b.classList.remove('bg-secondary', 'text-on-secondary', 'shadow-sm');
+          b.classList.add('bg-surface-container-highest', 'text-ink');
         });
+        btn.classList.add('bg-secondary', 'text-on-secondary', 'shadow-sm');
+        btn.classList.remove('bg-surface-container-highest', 'text-ink');
+        baseRate = parseInt(btn.getAttribute('data-rate'), 10);
+        updateTotal();
+      });
+    });
 
-        function showToast(message) {
-          const toast = document.getElementById('toast');
-          const toastMsg = document.getElementById('toastMsg');
-          toastMsg.textContent = message;
-          toast.classList.remove('translate-y-16', 'opacity-0');
-          toast.classList.add('translate-y-0', 'opacity-100');
-          setTimeout(() => {
-            toast.classList.remove('translate-y-0', 'opacity-100');
-            toast.classList.add('translate-y-16', 'opacity-0');
-          }, 3000);
-        }
-
-        document.querySelectorAll('.reserve-btn').forEach(btn => {
-          btn.addEventListener('click', () => {
-            const unit = btn.getAttribute('data-unit');
-            showToast('Direct hold applied for: ' + unit);
-          });
+    freqBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        freqBtns.forEach(b => {
+          b.classList.remove('bg-surface', 'text-ink', 'shadow-sm');
+          b.classList.add('bg-surface-container-highest', 'text-body-muted');
         });
-
-        document.querySelectorAll('.waitlist-btn').forEach(btn => {
-          btn.addEventListener('click', () => {
-            const unit = btn.getAttribute('data-unit');
-            showToast('Enrolled in alert dispatch for ' + unit);
-          });
-        });
-
-        const rateCardBtn = document.getElementById('rateCardBtn');
-        if (rateCardBtn) {
-          rateCardBtn.addEventListener('click', () => {
-            const csvContent = "UNIT_ID,NAME,CATEGORY,RATE_USD,RATE_ZMW,SPECS\n" +
-              "HLX-28-01,Toyota Hilux 2.8 GD-6,4x4 Commercial,135,3450,5 Pax Auto Diesel\n" +
-              "PRD-28-04,Land Cruiser Prado TX-L,Executive 4x4,160,4100,7 Pax Auto Diesel\n" +
-              "RNG-20-02,Ford Ranger Wildtrak,4x4 Commercial,140,3580,5 Pax 10-Spd Diesel\n" +
-              "FTN-28-09,Toyota Fortuner 2.8 VX,Executive SUV,125,3200,7 Pax Auto Diesel\n" +
-              "DMX-30-07,Isuzu D-Max 3.0 V-Cross,Commercial 4x4,115,2950,5 Pax Auto Diesel\n" +
-              "RAV-25-11,Toyota RAV4 AWD Hybrid,Urban Utility,95,2450,5 Pax E-CVT Hybrid\n";
-            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
-            const url = URL.createObjectURL(blob);
-            const link = document.createElement('a');
-            link.setAttribute('href', url);
-            link.setAttribute('download', 'copperbelt_fleet_rates_2025.csv');
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            showToast('Rate card (.CSV) downloaded.');
-          });
-        }
-
-        const copyCliBtn = document.getElementById('copyCliBtn');
-        if (copyCliBtn) {
-          copyCliBtn.addEventListener('click', () => {
-            navigator.clipboard.writeText('copperbelt dispatch --depot ndola --unit hlx-28-01')
-              .then(() => showToast('CLI command copied to clipboard.'))
-              .catch(() => showToast('Command: copperbelt dispatch --depot ndola --unit hlx-28-01'));
-          });
-        }
-      </script>
-    </div>
-  </div>
-</main>
-
-<footer class="w-full bg-surface-container-lowest border-t border-hairline py-space-xl">
-  <div class="max-w-[1200px] mx-auto px-space-md sm:px-gutter grid grid-cols-1 md:grid-cols-4 gap-space-xl">
-    <div class="flex flex-col gap-space-sm">
-      <div class="font-caption-mono text-caption-mono text-body-muted uppercase tracking-wider">System Platform</div>
-      <p class="font-body-sm text-body-sm text-on-surface-variant">Executive fleet provisioning and enterprise vehicle telematics along the Copperbelt corridor.</p>
-      <div class="font-caption-mono text-caption-mono text-on-surface-variant mt-space-sm">SYS_VER: 2.14.0 // ACTIVE</div>
-    </div>
-    <div class="flex flex-col gap-space-sm">
-      <div class="font-caption-mono text-caption-mono text-body-muted uppercase tracking-wider">Operations</div>
-      <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm">
-        <li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Fleet Dispatch</li>
-        <li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Mine-Spec Vehicles</li>
-        <li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Chauffeur Corporate</li>
-        <li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Corridor Transfer</li>
-      </ul>
-    </div>
-    <div class="flex flex-col gap-space-sm">
-      <div class="font-caption-mono text-caption-mono text-body-muted uppercase tracking-wider">Depots</div>
-      <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm">
-        <li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Ndola International Hub</li>
-        <li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Kitwe Central Depot</li>
-        <li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Chingola Commercial Gate</li>
-        <li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Solwezi West Terminal</li>
-      </ul>
-    </div>
-    <div class="flex flex-col gap-space-sm">
-      <div class="font-caption-mono text-caption-mono text-body-muted uppercase tracking-wider">Telemetry &amp; Compliance</div>
-      <p class="font-body-sm text-body-sm text-on-surface-variant">All vehicles fitted with satellite geofencing and real-time maintenance telemetry.</p>
-      <div class="font-caption-mono text-caption-mono text-body-muted mt-space-md">© 2025 COPPERBELT CAR HIRE LTD.</div>
-    </div>
-  </div>
-</footer>
-</body>
-</html>
+        btn.classList.add('bg-surface', 'text-ink', 'shadow-sm');
+        btn.classList.remove('bg-surface-container-highest', 'text-body-muted');
+        multiplier = parseFloat(btn.getAttribute('data-discount'));
+        updateTotal();
+      });
+    });
+  })();
+</script><footer class="mt-space-xl px-margin-mobile py-space-xl bg-surface-dark text-canvas rounded-t-full"><div class="max-w-md mx-auto flex flex-col gap-space-lg"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-status-success text-[20px]">verified</span><span class="font-label-sm text-label-sm text-status-success uppercase font-bold tracking-wider">100% Vetted Cleaners &amp; Eco Equipment</span></div><div class="flex flex-col gap-space-xs"><span class="font-title-sm text-title-sm text-canvas">Lusaka Neighborhood Coverage</span><p class="font-body-sm text-body-sm text-primary-fixed-dim leading-relaxed">Kabulonga · Woodlands · Chilenje · Rhodes Park · Roma · Avondale · Olympia · Mass Media · Longacres</p></div><div class="flex flex-col gap-space-xs"><span class="font-title-sm text-title-sm text-canvas">Operating Concierge</span><div class="flex items-center gap-space-sm text-body-sm font-body-sm text-primary-fixed-dim"><span class="material-symbols-outlined text-[18px]">schedule</span><span>Mon - Sat: 07:30 – 18:00</span></div><div class="flex items-center gap-space-sm text-body-sm font-body-sm text-primary-fixed-dim"><span class="material-symbols-outlined text-[18px]">location_on</span><span>Great East Road &amp; Leopards Hill, Lusaka</span></div></div><div class="pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-body-muted"><p>© 2025 Lusaka Shine Pros</p><a class="text-secondary-fixed hover:underline" href="tel:+260971234567">+260 97 123 4567</a></div></div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(20,20,19,0.06)]" data-active-classes="text-secondary font-semibold"><div class="px-gutter-mobile pt-space-xs pb-space-xs max-w-md mx-auto flex flex-col gap-space-xs"><div class="flex items-stretch gap-space-sm w-full"><a class="flex-1 h-12 px-space-sm bg-secondary hover:bg-coral-hover text-on-secondary font-title-sm text-title-sm rounded-xl flex items-center justify-center gap-space-xs shadow-[0_2px_8px_rgba(146,74,49,0.24)] transition-colors text-center leading-tight" href="https://wa.me/260971234567?text=Hi%20Lusaka%20Shine%20Pros,%20I'd%20like%20to%20book%20a%20cleaning" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">chat</span><span class="truncate">Book on WhatsApp</span></a><a class="h-12 px-space-md bg-surface-container hover:bg-surface-cream-strong text-ink font-title-sm text-title-sm rounded-xl flex items-center justify-center gap-space-xs transition-colors shrink-0" data-path="booking" href="#"><span class="material-symbols-outlined text-[18px]">calculate</span><span class="hidden xs:inline">Quote</span></a></div><div class="flex justify-around items-center h-12"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] transition-colors text-secondary font-semibold" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-label-sm tracking-normal">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-body-muted hover:text-ink transition-colors" data-path="services" href="#"><span class="material-symbols-outlined text-[22px]">cleaning_services</span><span class="font-label-sm text-label-sm tracking-normal">Services</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-body-muted hover:text-ink transition-colors" data-path="booking" href="#"><span class="material-symbols-outlined text-[22px]">calendar_month</span><span class="font-label-sm text-label-sm tracking-normal">Book</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-body-muted hover:text-ink transition-colors" data-path="testimonials" href="#"><span class="material-symbols-outlined text-[22px]">hotel_class</span><span class="font-label-sm text-label-sm tracking-normal">Reviews</span></a></div></div></nav></body></html>
